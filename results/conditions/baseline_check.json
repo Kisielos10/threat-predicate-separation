@@ -1,0 +1,62 @@
+{
+  "char-distribution (Kruegel/Vigna)": {
+    "rates": {
+      "csic_attack": 0.75,
+      "benign_hard": 0.4,
+      "benign_plain": 0.375
+    },
+    "medians": {
+      "csic_attack": 0.09620645066583114,
+      "benign_hard": 0.05062139576406613,
+      "benign_plain": 0.06808598081592834
+    },
+    "separation": 0.35,
+    "inverted": false,
+    "threshold": 0.0701989742879395
+  },
+  "one-class SVM (char n-gram)": {
+    "rates": {
+      "csic_attack": 0.65,
+      "benign_hard": 0.85,
+      "benign_plain": 0.075
+    },
+    "medians": {
+      "csic_attack": 0.012903702099608338,
+      "benign_hard": 0.0411517914835815,
+      "benign_plain": -7.610204782393382e-05
+    },
+    "separation": -0.2,
+    "inverted": true,
+    "threshold": 0.0018502237697473056
+  },
+  "isolation forest (char n-gram)": {
+    "rates": {
+      "csic_attack": 0.725,
+      "benign_hard": 1.0,
+      "benign_plain": 0.475
+    },
+    "medians": {
+      "csic_attack": 0.3705450083058295,
+      "benign_hard": 0.3765922331401201,
+      "benign_plain": 0.3549788152575547
+    },
+    "separation": -0.275,
+    "inverted": true,
+    "threshold": 0.35960163155138786
+  },
+  "PCA reconstruction error": {
+    "rates": {
+      "csic_attack": 0.95,
+      "benign_hard": 1.0,
+      "benign_plain": 0.325
+    },
+    "medians": {
+      "csic_attack": 0.36793609507612224,
+      "benign_hard": 0.68990714169083,
+      "benign_plain": 0.017364063679817198
+    },
+    "separation": -0.05,
+    "inverted": true,
+    "threshold": 0.22389802659079178
+  }
+}

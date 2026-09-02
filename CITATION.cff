@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the paper below."
+title: "Threat as a Checkable Predicate: code and results"
+abstract: >-
+  Code and result artefacts for measuring whether anomaly-based web attack
+  detection separates genuine attacks from legitimate-but-unusual traffic,
+  a category absent from public intrusion-detection corpora.
+type: software
+authors:
+  - family-names: Kisielewicz
+    given-names: Maciej
+    affiliation: "Wrocław University of Science and Technology"
+license: MIT
+repository-code: "https://github.com/Kisielos10/threat-predicate-separation"
+keywords:
+  - intrusion detection
+  - anomaly detection
+  - web application security
+  - evaluation methodology
+  - threat modelling

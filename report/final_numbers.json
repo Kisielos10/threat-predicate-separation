@@ -1,0 +1,1143 @@
+{
+  "comparative": {
+    "n_runs": 3,
+    "across_runs": {
+      "detector": {
+        "TPR": {
+          "mean": 0.964,
+          "ci95": 0.008,
+          "n": 3
+        },
+        "FPR": {
+          "mean": 0.249,
+          "ci95": 0.063,
+          "n": 3
+        },
+        "Precision": {
+          "mean": 0.796,
+          "ci95": 0.041,
+          "n": 3
+        },
+        "F1": {
+          "mean": 0.872,
+          "ci95": 0.022,
+          "n": 3
+        }
+      },
+      "mas_full": {
+        "TPR": {
+          "mean": 0.889,
+          "ci95": 0.023,
+          "n": 3
+        },
+        "FPR": {
+          "mean": 0.173,
+          "ci95": 0.015,
+          "n": 3
+        },
+        "Precision": {
+          "mean": 0.837,
+          "ci95": 0.015,
+          "n": 3
+        },
+        "F1": {
+          "mean": 0.862,
+          "ci95": 0.019,
+          "n": 3
+        }
+      },
+      "single_agent": {
+        "TPR": {
+          "mean": 0.955,
+          "ci95": 0.023,
+          "n": 3
+        },
+        "FPR": {
+          "mean": 0.258,
+          "ci95": 0.046,
+          "n": 3
+        },
+        "Precision": {
+          "mean": 0.788,
+          "ci95": 0.027,
+          "n": 3
+        },
+        "F1": {
+          "mean": 0.864,
+          "ci95": 0.006,
+          "n": 3
+        }
+      }
+    },
+    "pooled": {
+      "detector": {
+        "n": 450,
+        "TP": 217,
+        "FP": 56,
+        "TN": 169,
+        "FN": 8,
+        "unknown_rate": 0.0,
+        "TPR_strict_atak": 0.964,
+        "mean_seconds": 0.06
+      },
+      "mas_full": {
+        "n": 450,
+        "TP": 200,
+        "FP": 39,
+        "TN": 186,
+        "FN": 25,
+        "unknown_rate": 0.46,
+        "TPR_strict_atak": 0.138,
+        "mean_seconds": 44.21
+      },
+      "single_agent": {
+        "n": 450,
+        "TP": 215,
+        "FP": 58,
+        "TN": 167,
+        "FN": 10,
+        "unknown_rate": 0.249,
+        "TPR_strict_atak": 0.596,
+        "mean_seconds": 22.16
+      }
+    },
+    "sendback_mas_full": {
+      "n_mas_cases": 450,
+      "sendback_count": 89,
+      "sendback_rate": 0.198,
+      "decision_flipped_after_sendback": 35,
+      "final_decision_correct_after_flip": 27,
+      "flip_corrected_alert_level": 1,
+      "flip_broke_alert_level": 2,
+      "flip_directions": {
+        "atak -> nieznane": 32,
+        "atak -> normalne": 3
+      },
+      "missing_evidence_counts": {
+        "payload_inspect": 35,
+        "novelty_score": 55
+      }
+    },
+    "calibration": {
+      "detector": {
+        "mean_conf_correct": 0.969,
+        "mean_conf_wrong": 0.936,
+        "n_correct": 386,
+        "n_wrong": 64
+      },
+      "mas_full": {
+        "mean_conf_correct": 0.826,
+        "mean_conf_wrong": 0.783,
+        "n_correct": 386,
+        "n_wrong": 64
+      },
+      "single_agent": {
+        "mean_conf_correct": 0.876,
+        "mean_conf_wrong": 0.818,
+        "n_correct": 382,
+        "n_wrong": 68
+      }
+    }
+  },
+  "conditions": {
+    "with_novelty_local": {
+      "qwen2.5:7b": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.906,
+            "csic_attack_n": 149,
+            "benign_hard": 0.707,
+            "benign_hard_n": 150,
+            "benign_plain": 0.247,
+            "benign_plain_n": 150,
+            "separation": 0.199
+          },
+          "W2": {
+            "csic_attack": 0.207,
+            "csic_attack_n": 150,
+            "benign_hard": 0.027,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.18
+          },
+          "W3": {
+            "csic_attack": 0.407,
+            "csic_attack_n": 150,
+            "benign_hard": 0.067,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.34
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.201,
+            "csic_attack_n": 149,
+            "benign_hard": 0.027,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.174
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.403,
+            "csic_attack_n": 149,
+            "benign_hard": 0.067,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.336
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.18,
+            "csic_attack_n": 150,
+            "benign_hard": 0.02,
+            "benign_hard_n": 150,
+            "benign_plain": 0.007,
+            "benign_plain_n": 150,
+            "separation": 0.16
+          },
+          "T_S": {
+            "csic_attack": 0.174,
+            "csic_attack_n": 149,
+            "benign_hard": 0.02,
+            "benign_hard_n": 150,
+            "benign_plain": 0.007,
+            "benign_plain_n": 150,
+            "separation": 0.154
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 0.84,
+          "benign_plain": 0.327,
+          "separation": 0.12
+        },
+        "unusable": 1,
+        "n_calls": 1350
+      },
+      "llama3.1:8b": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.653,
+            "csic_attack_n": 150,
+            "benign_hard": 0.167,
+            "benign_hard_n": 150,
+            "benign_plain": 0.06,
+            "benign_plain_n": 150,
+            "separation": 0.486
+          },
+          "W2": {
+            "csic_attack": 0.607,
+            "csic_attack_n": 150,
+            "benign_hard": 0.327,
+            "benign_hard_n": 150,
+            "benign_plain": 0.147,
+            "benign_plain_n": 150,
+            "separation": 0.28
+          },
+          "W3": {
+            "csic_attack": 0.653,
+            "csic_attack_n": 150,
+            "benign_hard": 0.093,
+            "benign_hard_n": 150,
+            "benign_plain": 0.02,
+            "benign_plain_n": 150,
+            "separation": 0.56
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.447,
+            "csic_attack_n": 150,
+            "benign_hard": 0.16,
+            "benign_hard_n": 150,
+            "benign_plain": 0.04,
+            "benign_plain_n": 150,
+            "separation": 0.287
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.607,
+            "csic_attack_n": 150,
+            "benign_hard": 0.093,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.514
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.453,
+            "csic_attack_n": 150,
+            "benign_hard": 0.093,
+            "benign_hard_n": 150,
+            "benign_plain": 0.02,
+            "benign_plain_n": 150,
+            "separation": 0.36
+          },
+          "T_S": {
+            "csic_attack": 0.407,
+            "csic_attack_n": 150,
+            "benign_hard": 0.093,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.314
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 0.84,
+          "benign_plain": 0.327,
+          "separation": 0.12
+        },
+        "unusable": 0,
+        "n_calls": 1350
+      },
+      "mistral:7b": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.753,
+            "csic_attack_n": 150,
+            "benign_hard": 0.62,
+            "benign_hard_n": 150,
+            "benign_plain": 0.22,
+            "benign_plain_n": 150,
+            "separation": 0.133
+          },
+          "W2": {
+            "csic_attack": 0.333,
+            "csic_attack_n": 150,
+            "benign_hard": 0.013,
+            "benign_hard_n": 150,
+            "benign_plain": 0.007,
+            "benign_plain_n": 150,
+            "separation": 0.32
+          },
+          "W3": {
+            "csic_attack": 0.667,
+            "csic_attack_n": 150,
+            "benign_hard": 0.02,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.647
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.32,
+            "csic_attack_n": 150,
+            "benign_hard": 0.013,
+            "benign_hard_n": 150,
+            "benign_plain": 0.007,
+            "benign_plain_n": 150,
+            "separation": 0.307
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.66,
+            "csic_attack_n": 150,
+            "benign_hard": 0.02,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.64
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.327,
+            "csic_attack_n": 150,
+            "benign_hard": 0.007,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.32
+          },
+          "T_S": {
+            "csic_attack": 0.32,
+            "csic_attack_n": 150,
+            "benign_hard": 0.007,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.313
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 0.84,
+          "benign_plain": 0.327,
+          "separation": 0.12
+        },
+        "unusable": 0,
+        "n_calls": 1350
+      }
+    },
+    "with_novelty_sonnet": {
+      "claude-sonnet-5": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.733,
+            "csic_attack_n": 150,
+            "benign_hard": 0.02,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.713
+          },
+          "W2": {
+            "csic_attack": 0.387,
+            "csic_attack_n": 150,
+            "benign_hard": 0.007,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.38
+          },
+          "W3": {
+            "csic_attack": 0.66,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.66
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.387,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.387
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.66,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.66
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.367,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.367
+          },
+          "T_S": {
+            "csic_attack": 0.367,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.367
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 0.84,
+          "benign_plain": 0.327,
+          "separation": 0.12
+        },
+        "unusable": 0,
+        "n_calls": 1350
+      }
+    },
+    "no_novelty_local": {
+      "qwen2.5:7b": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.733,
+            "csic_attack_n": 150,
+            "benign_hard": 0.167,
+            "benign_hard_n": 150,
+            "benign_plain": 0.047,
+            "benign_plain_n": 150,
+            "separation": 0.566
+          },
+          "W2": {
+            "csic_attack": 0.227,
+            "csic_attack_n": 150,
+            "benign_hard": 0.107,
+            "benign_hard_n": 150,
+            "benign_plain": 0.033,
+            "benign_plain_n": 150,
+            "separation": 0.12
+          },
+          "W3": {
+            "csic_attack": 0.633,
+            "csic_attack_n": 150,
+            "benign_hard": 0.233,
+            "benign_hard_n": 150,
+            "benign_plain": 0.067,
+            "benign_plain_n": 150,
+            "separation": 0.4
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.22,
+            "csic_attack_n": 150,
+            "benign_hard": 0.08,
+            "benign_hard_n": 150,
+            "benign_plain": 0.02,
+            "benign_plain_n": 150,
+            "separation": 0.14
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.593,
+            "csic_attack_n": 150,
+            "benign_hard": 0.147,
+            "benign_hard_n": 150,
+            "benign_plain": 0.033,
+            "benign_plain_n": 150,
+            "separation": 0.446
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.207,
+            "csic_attack_n": 150,
+            "benign_hard": 0.107,
+            "benign_hard_n": 150,
+            "benign_plain": 0.027,
+            "benign_plain_n": 150,
+            "separation": 0.1
+          },
+          "T_S": {
+            "csic_attack": 0.207,
+            "csic_attack_n": 150,
+            "benign_hard": 0.08,
+            "benign_hard_n": 150,
+            "benign_plain": 0.02,
+            "benign_plain_n": 150,
+            "separation": 0.127
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 0.84,
+          "benign_plain": 0.327,
+          "separation": 0.12
+        },
+        "unusable": 0,
+        "n_calls": 1350
+      },
+      "llama3.1:8b": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.72,
+            "csic_attack_n": 150,
+            "benign_hard": 0.193,
+            "benign_hard_n": 150,
+            "benign_plain": 0.033,
+            "benign_plain_n": 150,
+            "separation": 0.527
+          },
+          "W2": {
+            "csic_attack": 0.687,
+            "csic_attack_n": 150,
+            "benign_hard": 0.447,
+            "benign_hard_n": 150,
+            "benign_plain": 0.227,
+            "benign_plain_n": 150,
+            "separation": 0.24
+          },
+          "W3": {
+            "csic_attack": 0.707,
+            "csic_attack_n": 150,
+            "benign_hard": 0.1,
+            "benign_hard_n": 150,
+            "benign_plain": 0.02,
+            "benign_plain_n": 150,
+            "separation": 0.607
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.553,
+            "csic_attack_n": 150,
+            "benign_hard": 0.187,
+            "benign_hard_n": 150,
+            "benign_plain": 0.033,
+            "benign_plain_n": 150,
+            "separation": 0.366
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.687,
+            "csic_attack_n": 150,
+            "benign_hard": 0.093,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.594
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.553,
+            "csic_attack_n": 150,
+            "benign_hard": 0.1,
+            "benign_hard_n": 150,
+            "benign_plain": 0.02,
+            "benign_plain_n": 150,
+            "separation": 0.453
+          },
+          "T_S": {
+            "csic_attack": 0.533,
+            "csic_attack_n": 150,
+            "benign_hard": 0.093,
+            "benign_hard_n": 150,
+            "benign_plain": 0.013,
+            "benign_plain_n": 150,
+            "separation": 0.44
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 0.84,
+          "benign_plain": 0.327,
+          "separation": 0.12
+        },
+        "unusable": 0,
+        "n_calls": 1350
+      },
+      "mistral:7b": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.54,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.54
+          },
+          "W2": {
+            "csic_attack": 0.4,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.4
+          },
+          "W3": {
+            "csic_attack": 0.587,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.587
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.327,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.327
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.54,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.54
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.373,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.373
+          },
+          "T_S": {
+            "csic_attack": 0.327,
+            "csic_attack_n": 150,
+            "benign_hard": 0.0,
+            "benign_hard_n": 150,
+            "benign_plain": 0.0,
+            "benign_plain_n": 150,
+            "separation": 0.327
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 0.84,
+          "benign_plain": 0.327,
+          "separation": 0.12
+        },
+        "unusable": 0,
+        "n_calls": 1350
+      }
+    },
+    "no_novelty_sonnet": {
+      "claude-sonnet-5": {
+        "criteria": {
+          "W1": {
+            "csic_attack": 0.82,
+            "csic_attack_n": 50,
+            "benign_hard": 0.06,
+            "benign_hard_n": 50,
+            "benign_plain": 0.0,
+            "benign_plain_n": 50,
+            "separation": 0.76
+          },
+          "W2": {
+            "csic_attack": 0.4,
+            "csic_attack_n": 50,
+            "benign_hard": 0.02,
+            "benign_hard_n": 50,
+            "benign_plain": 0.02,
+            "benign_plain_n": 50,
+            "separation": 0.38
+          },
+          "W3": {
+            "csic_attack": 0.74,
+            "csic_attack_n": 50,
+            "benign_hard": 0.0,
+            "benign_hard_n": 50,
+            "benign_plain": 0.0,
+            "benign_plain_n": 50,
+            "separation": 0.74
+          },
+          "W1_and_W2": {
+            "csic_attack": 0.38,
+            "csic_attack_n": 50,
+            "benign_hard": 0.02,
+            "benign_hard_n": 50,
+            "benign_plain": 0.0,
+            "benign_plain_n": 50,
+            "separation": 0.36
+          },
+          "W1_and_W3": {
+            "csic_attack": 0.74,
+            "csic_attack_n": 50,
+            "benign_hard": 0.0,
+            "benign_hard_n": 50,
+            "benign_plain": 0.0,
+            "benign_plain_n": 50,
+            "separation": 0.74
+          },
+          "W2_and_W3": {
+            "csic_attack": 0.36,
+            "csic_attack_n": 50,
+            "benign_hard": 0.0,
+            "benign_hard_n": 50,
+            "benign_plain": 0.0,
+            "benign_plain_n": 50,
+            "separation": 0.36
+          },
+          "T_S": {
+            "csic_attack": 0.36,
+            "csic_attack_n": 50,
+            "benign_hard": 0.0,
+            "benign_hard_n": 50,
+            "benign_plain": 0.0,
+            "benign_plain_n": 50,
+            "separation": 0.36
+          }
+        },
+        "detector": {
+          "csic_attack": 0.96,
+          "benign_hard": 1.0,
+          "benign_plain": 0.3,
+          "separation": -0.04
+        },
+        "unusable": 0,
+        "n_calls": 450
+      }
+    }
+  },
+  "conditions_handwritten": {
+    "qwen2.5:7b": {
+      "criteria": {
+        "W1": {
+          "csic_attack": 0.89,
+          "csic_attack_n": 100,
+          "benign_hard": 0.375,
+          "benign_hard_n": 40,
+          "benign_plain": 0.1,
+          "benign_plain_n": 100,
+          "separation": 0.515
+        },
+        "W2": {
+          "csic_attack": 0.19,
+          "csic_attack_n": 100,
+          "benign_hard": 0.025,
+          "benign_hard_n": 40,
+          "benign_plain": 0.01,
+          "benign_plain_n": 100,
+          "separation": 0.165
+        },
+        "W3": {
+          "csic_attack": 0.39,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.39
+        },
+        "W1_and_W2": {
+          "csic_attack": 0.19,
+          "csic_attack_n": 100,
+          "benign_hard": 0.025,
+          "benign_hard_n": 40,
+          "benign_plain": 0.01,
+          "benign_plain_n": 100,
+          "separation": 0.165
+        },
+        "W1_and_W3": {
+          "csic_attack": 0.39,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.39
+        },
+        "W2_and_W3": {
+          "csic_attack": 0.14,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.14
+        },
+        "T_S": {
+          "csic_attack": 0.14,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.14
+        }
+      },
+      "detector": {
+        "csic_attack": 0.98,
+        "benign_hard": 1.0,
+        "benign_plain": 0.26,
+        "separation": -0.02
+      }
+    },
+    "llama3.1:8b": {
+      "criteria": {
+        "W1": {
+          "csic_attack": 0.67,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.06,
+          "benign_plain_n": 100,
+          "separation": 0.67
+        },
+        "W2": {
+          "csic_attack": 0.62,
+          "csic_attack_n": 100,
+          "benign_hard": 0.275,
+          "benign_hard_n": 40,
+          "benign_plain": 0.14,
+          "benign_plain_n": 100,
+          "separation": 0.345
+        },
+        "W3": {
+          "csic_attack": 0.61,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.61
+        },
+        "W1_and_W2": {
+          "csic_attack": 0.46,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.05,
+          "benign_plain_n": 100,
+          "separation": 0.46
+        },
+        "W1_and_W3": {
+          "csic_attack": 0.59,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.59
+        },
+        "W2_and_W3": {
+          "csic_attack": 0.43,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.43
+        },
+        "T_S": {
+          "csic_attack": 0.41,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.41
+        }
+      },
+      "detector": {
+        "csic_attack": 0.98,
+        "benign_hard": 1.0,
+        "benign_plain": 0.26,
+        "separation": -0.02
+      }
+    },
+    "mistral:7b": {
+      "criteria": {
+        "W1": {
+          "csic_attack": 0.74,
+          "csic_attack_n": 100,
+          "benign_hard": 0.6,
+          "benign_hard_n": 40,
+          "benign_plain": 0.15,
+          "benign_plain_n": 100,
+          "separation": 0.14
+        },
+        "W2": {
+          "csic_attack": 0.28,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.28
+        },
+        "W3": {
+          "csic_attack": 0.61,
+          "csic_attack_n": 100,
+          "benign_hard": 0.025,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.585
+        },
+        "W1_and_W2": {
+          "csic_attack": 0.26,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.26
+        },
+        "W1_and_W3": {
+          "csic_attack": 0.59,
+          "csic_attack_n": 100,
+          "benign_hard": 0.025,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.565
+        },
+        "W2_and_W3": {
+          "csic_attack": 0.28,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.28
+        },
+        "T_S": {
+          "csic_attack": 0.26,
+          "csic_attack_n": 100,
+          "benign_hard": 0.0,
+          "benign_hard_n": 40,
+          "benign_plain": 0.0,
+          "benign_plain_n": 100,
+          "separation": 0.26
+        }
+      },
+      "detector": {
+        "csic_attack": 0.98,
+        "benign_hard": 1.0,
+        "benign_plain": 0.26,
+        "separation": -0.02
+      }
+    }
+  },
+  "published_baselines": {
+    "char-distribution (Kruegel & Vigna 2003)": {
+      "rates": {
+        "attack": 0.69,
+        "probe": 0.963,
+        "ordinary": 0.21
+      },
+      "medians": {
+        "attack": 0.0042,
+        "probe": 0.0289,
+        "ordinary": 0.0
+      },
+      "separation": -0.273,
+      "ordering": "INVERTED",
+      "per_category": {
+        "long_text": 1.0,
+        "sql_keyword_word": 0.875,
+        "accented": 0.932,
+        "apostrophe_name": 0.964,
+        "punctuated_password": 1.0,
+        "separator": 0.963,
+        "plus_email": 1.0,
+        "quoted_message": 1.0
+      }
+    },
+    "PAYL byte frequency (Wang & Stolfo 2004)": {
+      "rates": {
+        "attack": 0.587,
+        "probe": 1.0,
+        "ordinary": 0.143
+      },
+      "medians": {
+        "attack": 45.9439,
+        "probe": 79.6278,
+        "ordinary": 11.5068
+      },
+      "separation": -0.413,
+      "ordering": "INVERTED",
+      "per_category": {
+        "long_text": 1.0,
+        "sql_keyword_word": 1.0,
+        "accented": 1.0,
+        "apostrophe_name": 1.0,
+        "punctuated_password": 1.0,
+        "separator": 1.0,
+        "plus_email": 1.0,
+        "quoted_message": 1.0
+      }
+    },
+    "one-class SVM (char n-gram)": {
+      "rates": {
+        "attack": 0.697,
+        "probe": 0.667,
+        "ordinary": 0.083
+      },
+      "medians": {
+        "attack": 0.1098,
+        "probe": 0.1514,
+        "ordinary": -0.0001
+      },
+      "separation": 0.03,
+      "ordering": "INVERTED",
+      "per_category": {
+        "long_text": 1.0,
+        "sql_keyword_word": 0.7,
+        "accented": 0.568,
+        "apostrophe_name": 0.661,
+        "punctuated_password": 0.275,
+        "separator": 0.63,
+        "plus_email": 0.607,
+        "quoted_message": 1.0
+      }
+    },
+    "isolation forest (char n-gram)": {
+      "rates": {
+        "attack": 0.807,
+        "probe": 1.0,
+        "ordinary": 0.49
+      },
+      "medians": {
+        "attack": 0.3804,
+        "probe": 0.4083,
+        "ordinary": 0.3507
+      },
+      "separation": -0.193,
+      "ordering": "INVERTED",
+      "per_category": {
+        "long_text": 1.0,
+        "sql_keyword_word": 1.0,
+        "accented": 1.0,
+        "apostrophe_name": 1.0,
+        "punctuated_password": 1.0,
+        "separator": 1.0,
+        "plus_email": 1.0,
+        "quoted_message": 1.0
+      }
+    },
+    "PCA reconstruction error": {
+      "rates": {
+        "attack": 1.0,
+        "probe": 1.0,
+        "ordinary": 0.277
+      },
+      "medians": {
+        "attack": 0.4672,
+        "probe": 0.6873,
+        "ordinary": 0.002
+      },
+      "separation": 0.0,
+      "ordering": "INVERTED",
+      "per_category": {
+        "long_text": 1.0,
+        "sql_keyword_word": 1.0,
+        "accented": 1.0,
+        "apostrophe_name": 1.0,
+        "punctuated_password": 1.0,
+        "separator": 1.0,
+        "plus_email": 1.0,
+        "quoted_message": 1.0
+      }
+    }
+  },
+  "graph_w2": {
+    "csic_attack": {
+      "median_sigma": 0.4088,
+      "mean_attack_neighbours": 3.52
+    },
+    "benign_hard": {
+      "median_sigma": 0.3284,
+      "mean_attack_neighbours": 2.83
+    },
+    "benign_plain": {
+      "median_sigma": 0.0,
+      "mean_attack_neighbours": 0.82
+    }
+  },
+  "flow_domain": {
+    "centroid distance": {
+      "attack": {
+        "median": 11.9182,
+        "alert_rate": 0.552
+      },
+      "probe": {
+        "median": 4.4411,
+        "alert_rate": 0.147
+      },
+      "normal": {
+        "median": 3.1316,
+        "alert_rate": 0.035
+      },
+      "threshold": 10.5491,
+      "separation": 0.405
+    },
+    "isolation forest": {
+      "attack": {
+        "median": 0.4875,
+        "alert_rate": 0.547
+      },
+      "probe": {
+        "median": 0.3634,
+        "alert_rate": 0.122
+      },
+      "normal": {
+        "median": 0.3528,
+        "alert_rate": 0.11
+      },
+      "threshold": 0.4807,
+      "separation": 0.425
+    }
+  }
+}

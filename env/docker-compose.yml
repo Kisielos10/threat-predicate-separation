@@ -1,0 +1,9 @@
+services:
+  target:
+    build: .
+    container_name: zdv-mock-target
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./logs:/logs
+    restart: unless-stopped

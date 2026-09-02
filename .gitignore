@@ -1,0 +1,26 @@
+# Corpora are not redistributed; see the README for download instructions
+data/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Model and embedding caches
+.cache/
+*.pt
+
+# Mock environment runtime logs
+env/logs/
+
+# Large derived artefacts, rebuildable with build_graph_db.py
+results/graph/
+
+# OS
+.DS_Store

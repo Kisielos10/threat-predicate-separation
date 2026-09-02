@@ -1,0 +1,364 @@
+{
+  "metrics": {
+    "detector": {
+      "n": 450,
+      "TP": 217,
+      "FP": 56,
+      "TN": 169,
+      "FN": 8,
+      "TPR": 0.964,
+      "FPR": 0.249,
+      "Precision": 0.795,
+      "F1": 0.871,
+      "Accuracy": 0.858,
+      "TPR_strict_atak": 0.964,
+      "unknown_rate": 0.0,
+      "mean_confidence": 0.965,
+      "mean_seconds": 0.06,
+      "mean_llm_calls": 0.0,
+      "audit_sendbacks": 0
+    },
+    "mas_full": {
+      "n": 450,
+      "TP": 200,
+      "FP": 39,
+      "TN": 186,
+      "FN": 25,
+      "TPR": 0.889,
+      "FPR": 0.173,
+      "Precision": 0.837,
+      "F1": 0.862,
+      "Accuracy": 0.858,
+      "TPR_strict_atak": 0.138,
+      "unknown_rate": 0.46,
+      "mean_confidence": 0.82,
+      "mean_seconds": 44.21,
+      "mean_llm_calls": 7.7,
+      "audit_sendbacks": 89
+    },
+    "single_agent": {
+      "n": 450,
+      "TP": 215,
+      "FP": 58,
+      "TN": 167,
+      "FN": 10,
+      "TPR": 0.956,
+      "FPR": 0.258,
+      "Precision": 0.788,
+      "F1": 0.863,
+      "Accuracy": 0.849,
+      "TPR_strict_atak": 0.596,
+      "unknown_rate": 0.249,
+      "mean_confidence": 0.867,
+      "mean_seconds": 22.16,
+      "mean_llm_calls": 4.52,
+      "audit_sendbacks": 0
+    }
+  },
+  "metrics_across_runs": {
+    "detector": {
+      "n": {
+        "mean": 150.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "TP": {
+        "mean": 72.333,
+        "ci95": 0.653,
+        "n": 3
+      },
+      "FP": {
+        "mean": 18.667,
+        "ci95": 4.711,
+        "n": 3
+      },
+      "TN": {
+        "mean": 56.333,
+        "ci95": 4.711,
+        "n": 3
+      },
+      "FN": {
+        "mean": 2.667,
+        "ci95": 0.653,
+        "n": 3
+      },
+      "TPR": {
+        "mean": 0.964,
+        "ci95": 0.008,
+        "n": 3
+      },
+      "FPR": {
+        "mean": 0.249,
+        "ci95": 0.063,
+        "n": 3
+      },
+      "Precision": {
+        "mean": 0.796,
+        "ci95": 0.041,
+        "n": 3
+      },
+      "F1": {
+        "mean": 0.872,
+        "ci95": 0.022,
+        "n": 3
+      },
+      "Accuracy": {
+        "mean": 0.858,
+        "ci95": 0.029,
+        "n": 3
+      },
+      "TPR_strict_atak": {
+        "mean": 0.964,
+        "ci95": 0.008,
+        "n": 3
+      },
+      "unknown_rate": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "mean_confidence": {
+        "mean": 0.965,
+        "ci95": 0.01,
+        "n": 3
+      },
+      "mean_seconds": {
+        "mean": 0.06,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "mean_llm_calls": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "audit_sendbacks": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      }
+    },
+    "mas_full": {
+      "n": {
+        "mean": 150.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "TP": {
+        "mean": 66.667,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "FP": {
+        "mean": 13.0,
+        "ci95": 1.132,
+        "n": 3
+      },
+      "TN": {
+        "mean": 62.0,
+        "ci95": 1.132,
+        "n": 3
+      },
+      "FN": {
+        "mean": 8.333,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "TPR": {
+        "mean": 0.889,
+        "ci95": 0.023,
+        "n": 3
+      },
+      "FPR": {
+        "mean": 0.173,
+        "ci95": 0.015,
+        "n": 3
+      },
+      "Precision": {
+        "mean": 0.837,
+        "ci95": 0.015,
+        "n": 3
+      },
+      "F1": {
+        "mean": 0.862,
+        "ci95": 0.019,
+        "n": 3
+      },
+      "Accuracy": {
+        "mean": 0.858,
+        "ci95": 0.019,
+        "n": 3
+      },
+      "TPR_strict_atak": {
+        "mean": 0.138,
+        "ci95": 0.076,
+        "n": 3
+      },
+      "unknown_rate": {
+        "mean": 0.46,
+        "ci95": 0.04,
+        "n": 3
+      },
+      "mean_confidence": {
+        "mean": 0.82,
+        "ci95": 0.002,
+        "n": 3
+      },
+      "mean_seconds": {
+        "mean": 44.21,
+        "ci95": 2.665,
+        "n": 3
+      },
+      "mean_llm_calls": {
+        "mean": 7.697,
+        "ci95": 0.13,
+        "n": 3
+      },
+      "audit_sendbacks": {
+        "mean": 29.667,
+        "ci95": 4.711,
+        "n": 3
+      }
+    },
+    "single_agent": {
+      "n": {
+        "mean": 150.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "TP": {
+        "mean": 71.667,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "FP": {
+        "mean": 19.333,
+        "ci95": 3.457,
+        "n": 3
+      },
+      "TN": {
+        "mean": 55.667,
+        "ci95": 3.457,
+        "n": 3
+      },
+      "FN": {
+        "mean": 3.333,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "TPR": {
+        "mean": 0.955,
+        "ci95": 0.023,
+        "n": 3
+      },
+      "FPR": {
+        "mean": 0.258,
+        "ci95": 0.046,
+        "n": 3
+      },
+      "Precision": {
+        "mean": 0.788,
+        "ci95": 0.027,
+        "n": 3
+      },
+      "F1": {
+        "mean": 0.864,
+        "ci95": 0.006,
+        "n": 3
+      },
+      "Accuracy": {
+        "mean": 0.849,
+        "ci95": 0.011,
+        "n": 3
+      },
+      "TPR_strict_atak": {
+        "mean": 0.595,
+        "ci95": 0.023,
+        "n": 3
+      },
+      "unknown_rate": {
+        "mean": 0.249,
+        "ci95": 0.026,
+        "n": 3
+      },
+      "mean_confidence": {
+        "mean": 0.867,
+        "ci95": 0.002,
+        "n": 3
+      },
+      "mean_seconds": {
+        "mean": 22.163,
+        "ci95": 0.519,
+        "n": 3
+      },
+      "mean_llm_calls": {
+        "mean": 4.523,
+        "ci95": 0.057,
+        "n": 3
+      },
+      "audit_sendbacks": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      }
+    }
+  },
+  "calibration": {
+    "detector": {
+      "mean_conf_correct": 0.969,
+      "mean_conf_wrong": 0.936,
+      "n_correct": 386,
+      "n_wrong": 64
+    },
+    "mas_full": {
+      "mean_conf_correct": 0.826,
+      "mean_conf_wrong": 0.783,
+      "n_correct": 386,
+      "n_wrong": 64
+    },
+    "single_agent": {
+      "mean_conf_correct": 0.876,
+      "mean_conf_wrong": 0.818,
+      "n_correct": 382,
+      "n_wrong": 68
+    }
+  },
+  "sendback": {},
+  "conditions_W1_W2_W3": {},
+  "n_runs": 3,
+  "sendback_by_config": {
+    "mas_full": {
+      "n_mas_cases": 450,
+      "sendback_count": 89,
+      "sendback_rate": 0.198,
+      "decision_flipped_after_sendback": 35,
+      "final_decision_correct_after_flip": 27,
+      "flip_corrected_alert_level": 1,
+      "flip_broke_alert_level": 2,
+      "flip_directions": {
+        "atak -> nieznane": 32,
+        "atak -> normalne": 3
+      },
+      "missing_evidence_counts": {
+        "payload_inspect": 35,
+        "novelty_score": 55
+      }
+    }
+  },
+  "conditions_by_config": {
+    "mas_full": {
+      "attack": {
+        "W1": 0.827,
+        "W2": 0.12,
+        "W3": 0.782,
+        "n": 225
+      },
+      "benign": {
+        "W1": 0.116,
+        "W2": 0.004,
+        "W3": 0.156,
+        "n": 225
+      }
+    }
+  }
+}

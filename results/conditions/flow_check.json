@@ -1,0 +1,41 @@
+{
+  "n": {
+    "probe": 400,
+    "attack": 400,
+    "normal": 400
+  },
+  "results": {
+    "centroid distance": {
+      "attack": {
+        "median": 11.9182,
+        "alert_rate": 0.552
+      },
+      "probe": {
+        "median": 4.4411,
+        "alert_rate": 0.147
+      },
+      "normal": {
+        "median": 3.1316,
+        "alert_rate": 0.035
+      },
+      "threshold": 10.5491,
+      "separation": 0.405
+    },
+    "isolation forest": {
+      "attack": {
+        "median": 0.4875,
+        "alert_rate": 0.547
+      },
+      "probe": {
+        "median": 0.3634,
+        "alert_rate": 0.122
+      },
+      "normal": {
+        "median": 0.3528,
+        "alert_rate": 0.11
+      },
+      "threshold": 0.4807,
+      "separation": 0.425
+    }
+  }
+}

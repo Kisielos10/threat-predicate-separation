@@ -1,0 +1,112 @@
+{
+  "metrics": {
+    "detector": {
+      "n": 240,
+      "TP": 78,
+      "FP": 105,
+      "TN": 55,
+      "FN": 2,
+      "TPR": 0.975,
+      "FPR": 0.656,
+      "Precision": 0.426,
+      "F1": 0.593,
+      "Accuracy": 0.554,
+      "TPR_strict_atak": 0.975,
+      "unknown_rate": 0.0,
+      "mean_confidence": 0.971,
+      "mean_seconds": 0.06,
+      "mean_llm_calls": 0.0,
+      "audit_sendbacks": 0
+    },
+    "mas_full": {
+      "n": 240,
+      "TP": 67,
+      "FP": 74,
+      "TN": 86,
+      "FN": 13,
+      "TPR": 0.838,
+      "FPR": 0.463,
+      "Precision": 0.475,
+      "F1": 0.606,
+      "Accuracy": 0.637,
+      "TPR_strict_atak": 0.163,
+      "unknown_rate": 0.533,
+      "mean_confidence": 0.8,
+      "mean_seconds": 44.2,
+      "mean_llm_calls": 7.4,
+      "audit_sendbacks": 29
+    },
+    "single_agent": {
+      "n": 240,
+      "TP": 75,
+      "FP": 97,
+      "TN": 63,
+      "FN": 5,
+      "TPR": 0.938,
+      "FPR": 0.606,
+      "Precision": 0.436,
+      "F1": 0.595,
+      "Accuracy": 0.575,
+      "TPR_strict_atak": 0.5,
+      "unknown_rate": 0.421,
+      "mean_confidence": 0.832,
+      "mean_seconds": 23.64,
+      "mean_llm_calls": 4.58,
+      "audit_sendbacks": 0
+    }
+  },
+  "breakdown": {
+    "detector": {
+      "csic_attack": {
+        "n": 80,
+        "alert_rate": 0.975,
+        "atak_rate": 0.975
+      },
+      "benign_plain": {
+        "n": 80,
+        "alert_rate": 0.312,
+        "atak_rate": 0.312
+      },
+      "benign_hard": {
+        "n": 80,
+        "alert_rate": 1.0,
+        "atak_rate": 1.0
+      }
+    },
+    "mas_full": {
+      "csic_attack": {
+        "n": 80,
+        "alert_rate": 0.838,
+        "atak_rate": 0.163
+      },
+      "benign_plain": {
+        "n": 80,
+        "alert_rate": 0.188,
+        "atak_rate": 0.0
+      },
+      "benign_hard": {
+        "n": 80,
+        "alert_rate": 0.738,
+        "atak_rate": 0.0
+      }
+    },
+    "single_agent": {
+      "csic_attack": {
+        "n": 80,
+        "alert_rate": 0.938,
+        "atak_rate": 0.5
+      },
+      "benign_plain": {
+        "n": 80,
+        "alert_rate": 0.312,
+        "atak_rate": 0.087
+      },
+      "benign_hard": {
+        "n": 80,
+        "alert_rate": 0.9,
+        "atak_rate": 0.3
+      }
+    }
+  },
+  "n_runs": 2
+}

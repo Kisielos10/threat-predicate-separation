@@ -1,0 +1,39 @@
+{
+  "n_pairs": 159,
+  "detectors": {
+    "char-distribution (Kruegel & Vigna 2003)": {
+      "control": 0.779874213836478,
+      "probe": 0.9308176100628931,
+      "flipped_by_content": 0.1761006289308176,
+      "attacks": 0.69,
+      "separation": -0.24081761006289315,
+      "per_category": {
+        "accented": 0.9230769230769231,
+        "apostrophe_name": 0.9411764705882353,
+        "long_text": 1.0,
+        "plus_email": 1.0,
+        "punctuated_password": 1.0,
+        "quoted_message": 1.0,
+        "separator": 0.8076923076923077,
+        "sql_keyword_word": 0.8695652173913043
+      }
+    },
+    "PAYL byte frequency (Wang & Stolfo 2004)": {
+      "control": 0.7421383647798742,
+      "probe": 1.0,
+      "flipped_by_content": 0.2578616352201258,
+      "attacks": 0.6633333333333333,
+      "separation": -0.33666666666666667,
+      "per_category": {
+        "accented": 1.0,
+        "apostrophe_name": 1.0,
+        "long_text": 1.0,
+        "plus_email": 1.0,
+        "punctuated_password": 1.0,
+        "quoted_message": 1.0,
+        "separator": 1.0,
+        "sql_keyword_word": 1.0
+      }
+    }
+  }
+}

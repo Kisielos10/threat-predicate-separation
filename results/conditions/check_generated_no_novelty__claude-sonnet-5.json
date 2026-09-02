@@ -1,0 +1,3159 @@
+{
+  "threshold": 0.0009,
+  "detector": {
+    "benign-146": true,
+    "benign-134": true,
+    "attack-043": false,
+    "benign-119": true,
+    "benign-019": false,
+    "benign-011": false,
+    "attack-024": true,
+    "attack-046": true,
+    "attack-019": true,
+    "benign-141": true,
+    "benign-033": false,
+    "benign-032": false,
+    "benign-133": true,
+    "attack-038": true,
+    "benign-046": true,
+    "benign-136": true,
+    "benign-120": true,
+    "benign-043": false,
+    "benign-047": false,
+    "benign-107": true,
+    "benign-008": false,
+    "benign-005": true,
+    "attack-041": true,
+    "benign-027": false,
+    "attack-029": true,
+    "attack-025": true,
+    "benign-101": true,
+    "benign-000": true,
+    "benign-003": true,
+    "benign-004": false,
+    "benign-135": true,
+    "attack-016": true,
+    "attack-017": false,
+    "attack-037": true,
+    "benign-021": false,
+    "attack-000": true,
+    "benign-137": true,
+    "benign-017": false,
+    "benign-041": false,
+    "benign-148": true,
+    "benign-123": true,
+    "benign-131": true,
+    "benign-044": true,
+    "benign-110": true,
+    "benign-118": true,
+    "benign-018": false,
+    "benign-140": true,
+    "benign-015": false,
+    "attack-008": true,
+    "benign-012": true,
+    "benign-105": true,
+    "attack-048": true,
+    "benign-028": true,
+    "attack-047": true,
+    "benign-130": true,
+    "benign-038": false,
+    "benign-042": false,
+    "benign-115": true,
+    "attack-028": true,
+    "attack-014": true,
+    "benign-037": false,
+    "attack-035": true,
+    "benign-030": true,
+    "benign-109": true,
+    "benign-125": true,
+    "benign-040": false,
+    "attack-044": true,
+    "attack-034": true,
+    "benign-147": true,
+    "benign-049": true,
+    "benign-149": true,
+    "attack-031": true,
+    "benign-014": true,
+    "benign-035": true,
+    "benign-108": true,
+    "benign-114": true,
+    "benign-138": true,
+    "attack-040": true,
+    "benign-002": false,
+    "benign-126": true,
+    "attack-039": true,
+    "benign-009": false,
+    "benign-104": true,
+    "benign-132": true,
+    "attack-036": true,
+    "benign-121": true,
+    "attack-030": true,
+    "benign-145": true,
+    "attack-045": true,
+    "benign-016": false,
+    "benign-113": true,
+    "benign-025": false,
+    "attack-007": true,
+    "attack-032": true,
+    "attack-033": true,
+    "benign-001": false,
+    "attack-049": true,
+    "attack-005": true,
+    "benign-129": true,
+    "benign-006": false,
+    "attack-027": true,
+    "benign-122": true,
+    "benign-036": true,
+    "attack-011": true,
+    "benign-024": false,
+    "benign-117": true,
+    "benign-139": true,
+    "benign-026": true,
+    "benign-128": true,
+    "benign-127": true,
+    "benign-106": true,
+    "attack-001": true,
+    "attack-018": true,
+    "benign-039": true,
+    "benign-048": false,
+    "attack-022": true,
+    "attack-042": true,
+    "attack-020": true,
+    "benign-103": true,
+    "benign-007": false,
+    "benign-116": true,
+    "benign-142": true,
+    "benign-031": false,
+    "attack-009": true,
+    "attack-012": true,
+    "benign-144": true,
+    "benign-111": true,
+    "benign-010": false,
+    "attack-004": true,
+    "attack-010": true,
+    "benign-045": false,
+    "benign-102": true,
+    "benign-100": true,
+    "benign-013": false,
+    "benign-143": true,
+    "attack-003": true,
+    "benign-022": false,
+    "attack-015": true,
+    "attack-023": true,
+    "benign-112": true,
+    "benign-029": false,
+    "benign-020": false,
+    "benign-034": false,
+    "attack-013": true,
+    "attack-026": true,
+    "attack-002": true,
+    "attack-021": true,
+    "benign-023": true,
+    "benign-124": true,
+    "attack-006": true
+  },
+  "by_model": {
+    "claude-sonnet-5": [
+      {
+        "case_id": "benign-146",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value formats are consistent with normal application traffic.",
+          "W2": "Parameters match normal traffic patterns with no injection or malicious payload indicators.",
+          "W3": "The path, parameters, and method match normal application traffic, indicating legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-134",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content are consistent with normal traffic for this application.",
+          "W2": "The parameters match expected authentication fields with no evidence of malicious payloads or anomalies.",
+          "W3": "Structure, path, and parameters match normal legitimate login traffic for this application."
+        }
+      },
+      {
+        "case_id": "attack-043",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'cantidadA' is not among the known parameters for this path, indicating a structural deviation.",
+          "W2": "An unexpected parameter name mismatch alone does not indicate a confidentiality, integrity, or availability impact.",
+          "W3": "The parameter 'cantidadA' is not part of the known legitimate parameter set for this path, indicating out-of-spec request usage."
+        }
+      },
+      {
+        "case_id": "benign-119",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic, and parameter values appear as expected typical content.",
+          "W2": "Parameters and structure match normal traffic with no evidence of malicious payloads affecting CIA.",
+          "W3": "The request matches normal path, parameters, and method for this application, indicating ordinary legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-019",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "It is a simple GET request for a static image with no parameters, posing no risk to CIA.",
+          "W3": "Path, parameters, and method match normal legitimate traffic patterns for this application."
+        }
+      },
+      {
+        "case_id": "benign-011",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "No parameters or anomalies present that could affect confidentiality, integrity, or availability.",
+          "W3": "Path, parameters, and method all match normal legitimate traffic patterns."
+        }
+      },
+      {
+        "case_id": "attack-024",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path is not seen in normal traffic for this application.",
+          "W2": "A simple GET to a static-looking path with no parameters presents no clear vector to affect confidentiality, integrity, or availability.",
+          "W3": "The path is anomalous and does not match any normal traffic pattern, indicating non-sanctioned use."
+        }
+      },
+      {
+        "case_id": "attack-046",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic patterns for this application.",
+          "W2": "The request matches normal application traffic with no evidence of malicious or anomalous input.",
+          "W3": "Path, parameter, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "attack-019",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "The request matches normal traffic patterns with no suspicious parameters or payloads.",
+          "W3": "The request matches normal application structure with no anomalous parameters or path elements."
+        }
+      },
+      {
+        "case_id": "benign-141",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and parameter names match normal traffic, and values appear as expected form data.",
+          "W2": "The request matches expected structure and parameters with benign registration data, showing no indication of malicious payloads.",
+          "W3": "Request matches normal registration form usage in structure, parameters, and method."
+        }
+      },
+      {
+        "case_id": "benign-033",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "The request has no parameters and matches normal traffic patterns, showing no potential for impact.",
+          "W3": "The request matches normal application traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-032",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "It is a benign GET request for a static image with no parameters or anomalies.",
+          "W3": "The request matches normal application traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-133",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values are consistent with normal traffic for this application.",
+          "W2": "Request matches normal application structure and parameters with no evidence of malicious payloads.",
+          "W3": "Path, parameters, and method match normal application usage patterns."
+        }
+      },
+      {
+        "case_id": "attack-038",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'loginA' is not among the known parameters for this path, indicating a structural anomaly.",
+          "W2": "An unrecognized parameter name alone does not indicate any confidentiality, integrity, or availability impact.",
+          "W3": "The parameter 'loginA' is not part of the known legitimate parameter set for this path, indicating an unsanctioned request."
+        }
+      },
+      {
+        "case_id": "benign-046",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic, and parameter values appear as typical login credentials.",
+          "W2": "Structure and parameters match normal authentication traffic with no anomalous payload indicating a security impact.",
+          "W3": "The path, parameters, and method all match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-136",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameters match normal traffic, and values are typical registration data without anomalous content.",
+          "W2": "Parameters match expected registration fields with no evident injection or malicious payload.",
+          "W3": "Structure, path, and parameters match normal legitimate registration usage."
+        }
+      },
+      {
+        "case_id": "benign-120",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal registration traffic for this application.",
+          "W2": "Parameters match expected registration fields with normal structure, indicating no exploitation potential.",
+          "W3": "The request matches normal registration form usage with expected parameters and structure."
+        }
+      },
+      {
+        "case_id": "benign-043",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "It is a simple GET request for a static image with no parameters or anomalies.",
+          "W3": "The request matches normal application traffic patterns with no anomalous parameters or structure."
+        }
+      },
+      {
+        "case_id": "benign-047",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter value are consistent with normal traffic for this application.",
+          "W2": "The request matches normal application traffic patterns with no anomalous input indicating a threat to confidentiality, integrity, or availability.",
+          "W3": "Path, parameters, and method match normal application traffic."
+        }
+      },
+      {
+        "case_id": "benign-107",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method and value formats match normal traffic for this application.",
+          "W2": "Parameters and structure match normal registration traffic with no indication of malicious payloads.",
+          "W3": "Path, parameters, and method match normal registration traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-008",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and lack of parameters match normal traffic patterns for this application.",
+          "W2": "This is a benign GET request for a static image with no parameters or anomalies.",
+          "W3": "The request matches normal application traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-005",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values match normal traffic patterns for this application.",
+          "W2": "The request matches normal login traffic with expected parameters and no anomalous payloads.",
+          "W3": "The request matches normal application structure, parameters, and method for a standard login action."
+        }
+      },
+      {
+        "case_id": "attack-041",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal registration traffic for this application.",
+          "W2": "Parameters match expected registration fields with no anomalous or malicious content indicating impact to confidentiality, integrity, or availability.",
+          "W3": "The request matches the expected structure and parameters for normal registration form usage."
+        }
+      },
+      {
+        "case_id": "benign-027",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values match normal traffic patterns for this application.",
+          "W2": "Parameters and structure match normal benign traffic with no injection or malicious payload indicators.",
+          "W3": "Path, parameters, and method match normal application traffic with no anomalous values."
+        }
+      },
+      {
+        "case_id": "attack-029",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Parameter 'B2A' is not among the known parameters ['B2'] for this path.",
+          "W2": "An unexpected parameter on a known path does not by itself indicate a confidentiality, integrity, or availability impact.",
+          "W3": "The parameter B2A is not a known/valid parameter for this path, indicating unsanctioned use."
+        }
+      },
+      {
+        "case_id": "attack-025",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal traffic patterns for this application.",
+          "W2": "Parameters contain normal, benign values consistent with legitimate application traffic.",
+          "W3": "Path, parameters, and method match normal application traffic with no anomalous indicators."
+        }
+      },
+      {
+        "case_id": "benign-101",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values match normal traffic patterns for this application.",
+          "W2": "Parameters and path match normal, benign traffic with no indication of malicious payloads.",
+          "W3": "The path, parameters, and method all match normal legitimate application traffic."
+        }
+      },
+      {
+        "case_id": "benign-000",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameters match normal registration traffic, and values appear to be typical user-provided registration data.",
+          "W2": "The request matches normal registration traffic with expected parameters and no malicious payloads.",
+          "W3": "The request matches expected path, method, and parameters for a normal registration form submission."
+        }
+      },
+      {
+        "case_id": "benign-003",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values match normal traffic patterns for this application.",
+          "W2": "Request matches normal application structure and parameters with no evidence of malicious payload or anomaly.",
+          "W3": "Path, parameters, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-004",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic for this application.",
+          "W2": "A simple GET for a static image with no parameters poses no risk to confidentiality, integrity, or availability.",
+          "W3": "Request matches normal application traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-135",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal registration traffic for this application.",
+          "W2": "Parameters and structure match expected normal registration traffic with no evident malicious payload.",
+          "W3": "The request matches the expected registration form structure and parameters for normal application use."
+        }
+      },
+      {
+        "case_id": "attack-016",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The errorMsg parameter contains an SSI include directive, which is anomalous content not seen in normal traffic.",
+          "W2": "The parameter contains an SSI injection payload that could expose or manipulate server-side files.",
+          "W3": "The parameter contains an SSI injection payload (<!--#include...-->) that is not normal application input."
+        }
+      },
+      {
+        "case_id": "attack-017",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The precio parameter contains an unexpected slash character ('85/'), an anomalous value not matching normal numeric price format.",
+          "W2": "Parameters match expected normal traffic pattern with no injection or malicious payload indicators.",
+          "W3": "The request matches normal application structure and parameters, indicating ordinary legitimate use."
+        }
+      },
+      {
+        "case_id": "attack-037",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path with appended .java extension after creditos.jsp does not match normal application traffic structure.",
+          "W2": "Appending .java to a JSP path may expose source code, risking confidentiality.",
+          "W3": "The unusual path with an appended .java extension does not match any normal application usage pattern."
+        }
+      },
+      {
+        "case_id": "benign-021",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "The request has no parameters and matches normal benign traffic patterns, showing no indication of malicious intent.",
+          "W3": "The request matches normal application traffic with no anomalous path or parameters."
+        }
+      },
+      {
+        "case_id": "attack-000",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Parameter 'loginA' is not a known parameter for this path, indicating a structural deviation.",
+          "W2": "An unexpected parameter name suggests possible tampering with authentication logic, risking unauthorized access.",
+          "W3": "The parameter 'loginA' is not a known parameter for this path, indicating deviation from sanctioned usage."
+        }
+      },
+      {
+        "case_id": "benign-137",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic, and parameter values appear typical form data.",
+          "W2": "Parameters match normal application traffic with no evidence of malicious payloads or anomalies.",
+          "W3": "The request matches normal application structure, path, and parameters with no indication of malicious or malformed intent."
+        }
+      },
+      {
+        "case_id": "benign-017",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "A simple GET request for a static image file with no parameters poses no risk to confidentiality, integrity, or availability.",
+          "W3": "The request matches normal application traffic with no anomalous parameters or structure."
+        }
+      },
+      {
+        "case_id": "benign-041",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values match normal traffic patterns for this application.",
+          "W2": "Parameters and structure match normal traffic with no evidence of malicious payloads.",
+          "W3": "Path, method, and parameters match normal sanctioned application traffic."
+        }
+      },
+      {
+        "case_id": "benign-148",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values match normal traffic patterns for this application.",
+          "W2": "Parameters and structure match normal traffic with no evident malicious payload.",
+          "W3": "Path, parameters, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-123",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content match normal traffic patterns for this application.",
+          "W2": "The request matches normal application traffic with benign parameter values and no indication of malicious payloads.",
+          "W3": "Structure, path, and parameters match normal legitimate application usage."
+        }
+      },
+      {
+        "case_id": "benign-131",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic, and values are typical registration data.",
+          "W2": "The request matches normal registration traffic with expected structure and parameters, showing no signs of malicious payloads.",
+          "W3": "The request matches expected registration parameters and structure for normal application use."
+        }
+      },
+      {
+        "case_id": "benign-044",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal registration traffic for this application.",
+          "W2": "The request matches normal registration traffic with expected parameters and no anomalous or malicious content.",
+          "W3": "The request matches normal registration traffic patterns in structure, parameters, and method."
+        }
+      },
+      {
+        "case_id": "benign-110",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content match normal traffic patterns for this application.",
+          "W2": "Parameters are normal, expected values matching typical application traffic with no malicious payload indicators.",
+          "W3": "The request matches the application's normal path, parameters, and method, indicating ordinary legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-118",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The email parameter contains a space instead of a valid email format, and the address field includes unusual characters like '?A'.",
+          "W2": "Parameters match expected registration fields with no evidence of injection or malicious payloads.",
+          "W3": "Structure, path, method, and parameters match normal registration usage for this application."
+        }
+      },
+      {
+        "case_id": "benign-018",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter value match normal traffic for this application.",
+          "W2": "Request matches normal application traffic pattern with no indication of malicious or anomalous input.",
+          "W3": "The request matches normal application structure, path, and parameters, indicating ordinary legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-140",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The apostrophe in the nombre parameter value (O'Hara Ruiz) is unusual content not typical of normal traffic.",
+          "W2": "The unescaped apostrophe in the nombre parameter could enable SQL injection affecting confidentiality/integrity of data.",
+          "W3": "Path, method, and parameters match normal sanctioned application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-015",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic with no parameters present.",
+          "W2": "The request is a normal GET with no parameters and matches expected traffic patterns, posing no risk to confidentiality, integrity, or availability.",
+          "W3": "Path, parameters, and method match normal sanctioned traffic patterns for this application."
+        }
+      },
+      {
+        "case_id": "attack-008",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Parameter 'B2A' is not among the known parameters ['B2'] for this path.",
+          "W2": "An unexpected parameter name on a known path is a minor anomaly with no evident mechanism to affect confidentiality, integrity, or availability.",
+          "W3": "The parameter 'B2A' is not a known parameter for this path, indicating unsanctioned deviation from normal use."
+        }
+      },
+      {
+        "case_id": "benign-012",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameters match normal traffic and values appear as expected form data.",
+          "W2": "Parameters and structure match expected legitimate registration traffic with no evidence of malicious payloads.",
+          "W3": "The request matches the expected path, method, and parameters for normal registration use of the application."
+        }
+      },
+      {
+        "case_id": "benign-105",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values match normal traffic patterns for this application.",
+          "W2": "Parameters are well-formed and match expected normal traffic patterns, showing no injection or malicious payload.",
+          "W3": "Path, parameters, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "attack-048",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The id parameter contains an unexpected slash character ('3/') not typical of normal numeric values.",
+          "W2": "The id parameter contains a slash and semicolon, suggesting potential injection that could affect data integrity.",
+          "W3": "The id parameter contains an unexpected '3/;' pattern inconsistent with normal numeric input for this field."
+        }
+      },
+      {
+        "case_id": "benign-028",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values match normal traffic patterns for this application.",
+          "W2": "Parameters and structure match normal traffic with no indication of malicious payloads or anomalies.",
+          "W3": "Path, parameters, and method match normal legitimate traffic patterns for this application."
+        }
+      },
+      {
+        "case_id": "attack-047",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The requested path does not occur in normal traffic at all.",
+          "W2": "Requesting a .INC file may expose sensitive source code or configuration data, violating confidentiality.",
+          "W3": "Accessing an .INC file path never seen in normal traffic indicates non-sanctioned use."
+        }
+      },
+      {
+        "case_id": "benign-130",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values are consistent with normal traffic for this application.",
+          "W2": "Parameters and structure match normal traffic with no indication of malicious or unexpected content.",
+          "W3": "Structure, path, method, and parameters match normal application traffic with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-038",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "GET request with no parameters to a known path matches normal traffic and shows no injection vector.",
+          "W3": "Path, parameters, and method match normal sanctioned traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-042",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "The request is a simple GET with no parameters and matches normal traffic patterns, posing no risk to confidentiality, integrity, or availability.",
+          "W3": "The path, parameters, and method all match normal legitimate traffic patterns for this application."
+        }
+      },
+      {
+        "case_id": "benign-115",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic, and parameter values are consistent with typical form data.",
+          "W2": "Parameters and structure match normal application traffic with no indication of malicious payloads.",
+          "W3": "The request matches normal application path, method, and parameters consistent with legitimate registration form use."
+        }
+      },
+      {
+        "case_id": "attack-028",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path structure with nested image file extensions does not occur in normal traffic.",
+          "W2": "It is a simple GET for a static file path with no parameters or payload capable of affecting confidentiality, integrity, or availability.",
+          "W3": "The nested/duplicated image path structure does not match any normal application usage pattern."
+        }
+      },
+      {
+        "case_id": "attack-014",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'idA' is not among the known parameters for this path, indicating a structural deviation.",
+          "W2": "The unexpected parameter 'idA' does not by itself indicate any exploit affecting confidentiality, integrity, or availability.",
+          "W3": "Parameter 'idA' is not a known parameter for this path, indicating an unsanctioned or manipulated request rather than normal use."
+        }
+      },
+      {
+        "case_id": "benign-037",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "A parameterless GET to a known normal path shows no indication of harmful capability.",
+          "W3": "Path, parameters, and method match normal, sanctioned application traffic."
+        }
+      },
+      {
+        "case_id": "attack-035",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'idA' is not among the known parameters normally seen on this path, indicating a structural deviation.",
+          "W2": "Unexpected parameter name doesn't indicate any mechanism to compromise confidentiality, integrity, or availability.",
+          "W3": "The parameter 'idA' is not a known parameter for this path, indicating an unexpected/unsanctioned request structure."
+        }
+      },
+      {
+        "case_id": "benign-030",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content all match normal traffic patterns for this application.",
+          "W2": "Parameters and structure match normal authentication traffic with no evidence of malicious payloads.",
+          "W3": "Path, method, and parameters all match normal authentication traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-109",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value contents match normal traffic patterns for this application.",
+          "W2": "Parameters and structure match normal expected traffic with no malicious payload indicators.",
+          "W3": "Path, parameters, and method match normal application traffic, indicating ordinary legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-125",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content match normal traffic for this application.",
+          "W2": "Parameters match expected normal traffic with benign values, showing no indication of malicious payloads.",
+          "W3": "Path, parameters, and method match normal application traffic with typical form values."
+        }
+      },
+      {
+        "case_id": "benign-040",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "It is a plain GET for a static image with no parameters or anomalies.",
+          "W3": "The request matches normal, sanctioned traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "attack-044",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The precio parameter contains anomalous SSI/command injection-like content not typical of normal traffic.",
+          "W2": "The precio parameter contains an SSI injection payload attempting command execution, which could compromise confidentiality, integrity, or availability.",
+          "W3": "The precio parameter contains an SSI command injection payload, not legitimate input."
+        }
+      },
+      {
+        "case_id": "attack-034",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The email parameter contains malformed content with multiple '@' symbols, deviating from normal parameter value patterns.",
+          "W2": "The request matches normal registration traffic with no evidence of malicious payloads affecting confidentiality, integrity, or availability.",
+          "W3": "The request matches the application's normal path, method, and parameters for a registration form submission."
+        }
+      },
+      {
+        "case_id": "benign-147",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure matches normal traffic and parameter values contain plausible registration data with no anomalous content.",
+          "W2": "Parameters contain only ordinary registration data with no injection or malicious payload indicators.",
+          "W3": "Structure, path, and parameters match normal registration traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-049",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values match normal traffic for this application.",
+          "W2": "Request structure and parameters match normal expected traffic with no evident malicious payload.",
+          "W3": "Path, parameters, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-149",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and values are consistent with normal traffic for this application.",
+          "W2": "The request matches normal application traffic with expected parameters and no malicious payload indicators.",
+          "W3": "The path, parameters, and method match normal application usage patterns."
+        }
+      },
+      {
+        "case_id": "attack-031",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Parameter 'B2A' is not among the known parameters (['B2']) for this path, indicating a structural deviation.",
+          "W2": "An unrecognized parameter name on a known path is a structural anomaly, not evidence of a confidentiality, integrity, or availability impact.",
+          "W3": "The parameter B2A is not part of the known parameter set for this path, indicating deviation from sanctioned use."
+        }
+      },
+      {
+        "case_id": "benign-014",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values are consistent with normal registration traffic for this application.",
+          "W2": "The request matches normal application structure and contains typical registration data with no injection or malicious payload indicators.",
+          "W3": "The path, parameters, and method all match normal registration traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-035",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content match normal traffic patterns for this application.",
+          "W2": "Request matches normal authentication traffic with expected parameters and no malicious payload indicators.",
+          "W3": "The request matches normal application structure, path, and parameters consistent with legitimate authentication use."
+        }
+      },
+      {
+        "case_id": "benign-108",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content are consistent with normal traffic for this application.",
+          "W2": "Parameters contain plain registration data with no evident injection or malicious payload.",
+          "W3": "Path, parameters, and method match normal application usage patterns."
+        }
+      },
+      {
+        "case_id": "benign-114",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic, and values are consistent with expected registration data.",
+          "W2": "Parameters match expected registration fields with no evidence of malicious payloads affecting confidentiality, integrity, or availability.",
+          "W3": "The request matches expected registration parameters and structure for normal application use."
+        }
+      },
+      {
+        "case_id": "benign-138",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal registration traffic for this application.",
+          "W2": "Parameters conform to expected registration fields with no evident malicious payload or anomaly.",
+          "W3": "Structure and parameters match normal application registration traffic."
+        }
+      },
+      {
+        "case_id": "attack-040",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and parameter names match normal traffic, and values are typical registration data.",
+          "W2": "Parameters and structure match normal registration traffic with no evidence of malicious payloads.",
+          "W3": "Path, method, and parameters match normal registration form usage for this application."
+        }
+      },
+      {
+        "case_id": "benign-002",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "It is a benign static image request with no parameters or anomalies.",
+          "W3": "Request matches normal traffic patterns with no anomalous parameters or structure."
+        }
+      },
+      {
+        "case_id": "benign-126",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values all match normal traffic patterns for this application.",
+          "W2": "The request matches normal application traffic with expected parameters and no indication of malicious payloads or unauthorized access.",
+          "W3": "Path, parameters, and method match normal legitimate application traffic."
+        }
+      },
+      {
+        "case_id": "attack-039",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Parameter 'modoA' is not among the known parameters for this path, indicating a structural anomaly.",
+          "W2": "An unexpected parameter ('modoA') not normally accepted by this endpoint could alter application logic or bypass validation, risking integrity.",
+          "W3": "The parameter 'modoA' is not a known parameter for this path, indicating deviation from normal usage."
+        }
+      },
+      {
+        "case_id": "benign-009",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "A plain GET with no parameters to a normal path presents no vector to affect confidentiality, integrity, or availability.",
+          "W3": "The request matches normal application traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-104",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure matches normal traffic and parameter values appear as expected registration data.",
+          "W2": "Parameters match expected registration fields with normal-looking values, no evident injection or malicious payload.",
+          "W3": "The request matches expected structure and parameters for a normal registration form submission."
+        }
+      },
+      {
+        "case_id": "benign-132",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic, and parameter values appear as expected content.",
+          "W2": "Parameters and structure match normal application traffic with no indication of malicious payloads.",
+          "W3": "Path, parameters, and method match normal application traffic for this form."
+        }
+      },
+      {
+        "case_id": "attack-036",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path structure with a .jsp~ appended after an image extension is anomalous and not seen in normal traffic.",
+          "W2": "Unusual path traversal-like pattern with appended .jsp~ could probe for hidden files or bypass extension filtering, risking confidentiality.",
+          "W3": "The unusual nested extension path and appended tilde do not match any normal application usage pattern."
+        }
+      },
+      {
+        "case_id": "benign-121",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal traffic for this application.",
+          "W2": "Parameters match expected benign values with no evident injection or malicious payload.",
+          "W3": "Path, method, and parameters all match normal application traffic with typical shopping cart values."
+        }
+      },
+      {
+        "case_id": "attack-030",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Parameter 'B2A' is not among the known parameters ['B2'] for this path, indicating structural deviation.",
+          "W2": "An unexpected but benign parameter with static text does not threaten confidentiality, integrity, or availability.",
+          "W3": "The parameter 'B2A' is not a recognized parameter for this path, indicating deviation from normal usage."
+        }
+      },
+      {
+        "case_id": "benign-145",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content all match normal traffic patterns for this application.",
+          "W2": "Request matches normal application traffic patterns with no evident malicious payload or anomaly.",
+          "W3": "Path, parameters, and method all match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "attack-045",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path /.jsp does not occur in normal traffic for this application.",
+          "W2": "A GET request to a nonexistent path with no parameters has no mechanism to affect confidentiality, integrity, or availability.",
+          "W3": "Requesting a nonstandard path like /.jsp never occurs in normal traffic, indicating out-of-band probing rather than legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-016",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method all match normal traffic patterns for this application.",
+          "W2": "Request matches normal traffic pattern with no parameters or anomalies indicating a security impact.",
+          "W3": "Path, parameters, and method match normal application traffic."
+        }
+      },
+      {
+        "case_id": "benign-113",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic, with only expected value content like an apostrophe in a name.",
+          "W2": "Parameters match expected structure and values with no evidence of malicious payloads.",
+          "W3": "Structure, path, method and parameters match normal application usage patterns."
+        }
+      },
+      {
+        "case_id": "benign-025",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value are all typical for this application.",
+          "W2": "The request matches normal application traffic with a simple numeric parameter and no evident malicious payload.",
+          "W3": "The request matches normal application traffic patterns with expected path, method, and parameters."
+        }
+      },
+      {
+        "case_id": "attack-007",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The precio parameter contains an unusual value '85/' with a stray slash, deviating from normal numeric content.",
+          "W2": "The request matches normal traffic patterns with benign parameters, showing no sign of malicious payloads or exploits.",
+          "W3": "The request matches the application's normal path, parameters, and method for this shopping cart action."
+        }
+      },
+      {
+        "case_id": "attack-032",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The pwd parameter contains SQL injection syntax not seen in normal traffic.",
+          "W2": "The pwd parameter contains a SQL injection pattern that could compromise authentication logic and data confidentiality/integrity.",
+          "W3": "The pwd parameter contains a SQL injection payload, not a legitimate credential value."
+        }
+      },
+      {
+        "case_id": "attack-033",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path with a .jpg.java extension does not occur in normal traffic for this application.",
+          "W2": "A simple GET for a static resource path with no parameters shows no mechanism to affect confidentiality, integrity, or availability.",
+          "W3": "The requested path is anomalous and does not match any legitimate application resource pattern."
+        }
+      },
+      {
+        "case_id": "benign-001",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic for this application.",
+          "W2": "Request matches normal traffic pattern with no parameters or anomalies to exploit.",
+          "W3": "The request matches normal application traffic patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "attack-049",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and parameter names match normal traffic and there are no parameters with anomalous content.",
+          "W2": "Request structure matches normal application traffic with no parameters or anomalies indicating risk.",
+          "W3": "Path, parameters, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "attack-005",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter value contains an unexpected Set-cookie header injection and unusual encoded characters not seen in normal traffic.",
+          "W2": "The parameter contains a Set-cookie header injection attempt, which could enable session manipulation or HTTP response splitting affecting integrity.",
+          "W3": "The parameter value contains an injected Set-cookie header and tampered session data, which is not part of normal application input."
+        }
+      },
+      {
+        "case_id": "benign-129",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value contents match normal traffic patterns for this application.",
+          "W2": "Parameters and path match normal registration traffic with no evidence of malicious payloads.",
+          "W3": "The request matches normal registration functionality with expected path, method, and parameters."
+        }
+      },
+      {
+        "case_id": "benign-006",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic for this application.",
+          "W2": "It is a simple GET for a static image with no parameters, posing no risk to confidentiality, integrity, or availability.",
+          "W3": "Path, parameters, and method match normal legitimate traffic patterns for this application."
+        }
+      },
+      {
+        "case_id": "attack-027",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'idA' is not among the known parameters ['id'] for this path, indicating a structural deviation.",
+          "W2": "An unexpected parameter name alone does not indicate any impact on confidentiality, integrity, or availability.",
+          "W3": "The parameter 'idA' is not a known parameter for this path, indicating usage outside normal application behavior."
+        }
+      },
+      {
+        "case_id": "benign-122",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal registration traffic for this application.",
+          "W2": "Request matches normal registration traffic with expected parameters and no malicious payload indicators.",
+          "W3": "The request matches the application's normal registration form structure and parameters, consistent with legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-036",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content all match normal traffic for this application.",
+          "W2": "Parameters and structure match normal login traffic with no evidence of malicious payloads.",
+          "W3": "The request matches normal application login parameters and structure, indicating ordinary legitimate use."
+        }
+      },
+      {
+        "case_id": "attack-011",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'direccionA' is not among the known parameters for this path, indicating a structural anomaly.",
+          "W2": "An unexpected parameter (direccionA) not part of the known schema could indicate manipulation of application logic or data handling.",
+          "W3": "The parameter 'direccionA' is not among the known legitimate parameters for this path, indicating unsanctioned request structure."
+        }
+      },
+      {
+        "case_id": "benign-024",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "It is a simple GET for a static image with no parameters, posing no risk to confidentiality, integrity, or availability.",
+          "W3": "The request matches normal application path, method, and parameter patterns with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-117",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content all match normal traffic patterns for this application.",
+          "W2": "Parameters match expected normal traffic patterns with no evident malicious payload or anomaly.",
+          "W3": "Path, parameters, and method match normal application traffic patterns, indicating legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-139",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content match normal traffic patterns for this application.",
+          "W2": "The request matches normal application patterns with a benign parameter and no evidence of malicious payload.",
+          "W3": "Path, parameters, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-026",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and parameters match normal registration traffic with typical value content.",
+          "W2": "The request matches normal registration traffic with expected parameters and no malicious payloads.",
+          "W3": "Structure, path, method, and parameters match normal registration traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-128",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path, method, and parameter names match normal traffic, and parameter values appear consistent with typical usage.",
+          "W2": "Parameters and structure match normal application traffic with no evidence of malicious payload.",
+          "W3": "Path, method, and parameters match normal application usage patterns."
+        }
+      },
+      {
+        "case_id": "benign-127",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values all match normal registration traffic patterns for this application.",
+          "W2": "The request matches expected structure and parameters for a normal registration form submission with no anomalous content.",
+          "W3": "Request matches normal registration form usage with expected parameters and structure."
+        }
+      },
+      {
+        "case_id": "benign-106",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content are consistent with normal traffic for this application.",
+          "W2": "The request matches normal application traffic with typical parameters and no evidence of malicious payloads.",
+          "W3": "The request matches the application's normal path, parameters, and method, consistent with legitimate use."
+        }
+      },
+      {
+        "case_id": "attack-001",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Parameter 'errorMsgA' is not a known parameter for this path, unlike the expected 'errorMsg'.",
+          "W2": "An unrecognized parameter name with benign text content poses no evident threat to confidentiality, integrity, or availability.",
+          "W3": "The parameter 'errorMsgA' is not a known parameter for this path, indicating unsanctioned use."
+        }
+      },
+      {
+        "case_id": "attack-018",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The login parameter contains an SSI injection payload, which is anomalous content not normally seen in that field.",
+          "W2": "The login parameter contains an SSI injection payload that could disclose or manipulate server-side files.",
+          "W3": "The login parameter contains an SSI injection payload, not a legitimate credential value."
+        }
+      },
+      {
+        "case_id": "benign-039",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": true,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values all match normal traffic patterns for this application.",
+          "W2": "It submits authentication credentials, which if intercepted or mishandled could affect confidentiality of the account.",
+          "W3": "The request matches normal application structure and parameters, consistent with legitimate use."
+        }
+      },
+      {
+        "case_id": "benign-048",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "It is a benign static image request with no parameters or anomalous structure.",
+          "W3": "Path, parameters, and method match normal legitimate traffic for this application."
+        }
+      },
+      {
+        "case_id": "attack-022",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The B2 parameter contains an anomalous script injection payload not seen in normal traffic.",
+          "W2": "The parameter contains an embedded script tag indicative of XSS payload, which could compromise data integrity/confidentiality if reflected or executed.",
+          "W3": "The parameter contains an injected script tag, which is not part of normal application input."
+        }
+      },
+      {
+        "case_id": "attack-042",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path /iisadmpwd/achg.htr does not occur in normal traffic at all.",
+          "W2": "Access to /iisadmpwd/achg.htr targets a known vulnerable IIS component that could allow unauthorized password changes or information disclosure.",
+          "W3": "This path is not part of normal traffic and matches a known legacy IIS exploit target, indicating out-of-scope usage."
+        }
+      },
+      {
+        "case_id": "attack-020",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'idA' is not among the known parameters ['id'] for this path, indicating a structural deviation.",
+          "W2": "An unexpected parameter name alone does not demonstrate any impact on confidentiality, integrity, or availability.",
+          "W3": "The parameter 'idA' is not a known parameter for this path, indicating unsanctioned use."
+        }
+      },
+      {
+        "case_id": "benign-103",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter values all match normal traffic patterns for this application.",
+          "W2": "The request matches normal traffic patterns with benign parameter values and no indication of malicious payloads.",
+          "W3": "Path, parameters, and method match normal application usage patterns."
+        }
+      },
+      {
+        "case_id": "benign-007",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "Request has no parameters and matches normal traffic patterns, showing no exploitable input.",
+          "W3": "Path, method, and parameters match normal application traffic with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-116",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content match normal traffic patterns for this application.",
+          "W2": "Parameters match expected registration fields with no evidence of malicious payloads or anomalies.",
+          "W3": "Path, parameters, and method match normal registration traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-142",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content are consistent with normal traffic for this application.",
+          "W2": "The request contains only a benign error message parameter matching normal traffic patterns, with no indication of malicious payloads or data manipulation.",
+          "W3": "The path, parameters, and method all match normal sanctioned application traffic."
+        }
+      },
+      {
+        "case_id": "benign-031",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "The request is a simple GET with no parameters and matches normal traffic patterns, posing no evident risk.",
+          "W3": "Path, parameters, and method match normal application traffic with no anomalies."
+        }
+      },
+      {
+        "case_id": "attack-009",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'nombreA' is not among the known parameters for this path, indicating a structural deviation.",
+          "W2": "Unknown parameter 'nombreA' is merely a naming mismatch, not evidence of an actual security impact.",
+          "W3": "The parameter 'nombreA' is not a known parameter for this path, indicating an unsanctioned request."
+        }
+      },
+      {
+        "case_id": "attack-012",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic, and parameter values appear typical.",
+          "W2": "The request matches normal application traffic patterns with no evidence of malicious payloads or anomalies.",
+          "W3": "Method, path, and parameters match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-144",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content are consistent with normal registration traffic for this application.",
+          "W2": "Parameters match expected registration fields with no evidence of malicious payloads or anomalies.",
+          "W3": "The request matches normal registration usage with expected path, parameters, and method."
+        }
+      },
+      {
+        "case_id": "benign-111",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and parameter names match normal traffic, and values appear to be typical form data.",
+          "W2": "Parameters match expected registration fields with no indication of injection or malicious payload.",
+          "W3": "The request matches the application's normal registration form structure, parameters, and method."
+        }
+      },
+      {
+        "case_id": "benign-010",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and parameter content match normal traffic patterns for this application.",
+          "W2": "The request matches normal application patterns with no evidence of malicious payload or anomaly.",
+          "W3": "The request matches normal application path, method, and parameters with no anomalous indicators."
+        }
+      },
+      {
+        "case_id": "attack-004",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path pattern does not occur in normal traffic for this application.",
+          "W2": "A simple GET to an unusual static-like path with no parameters shows no mechanism to affect confidentiality, integrity, or availability.",
+          "W3": "The path structure does not match any normal traffic pattern for this application."
+        }
+      },
+      {
+        "case_id": "attack-010",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The id parameter contains an embedded script tag payload atypical of normal values.",
+          "W2": "The id parameter contains an unescaped script tag indicating potential XSS that could compromise integrity/confidentiality via injected script execution.",
+          "W3": "The parameter contains an injected script tag typical of XSS testing, not normal use."
+        }
+      },
+      {
+        "case_id": "benign-045",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method match normal traffic patterns for this application.",
+          "W2": "It is a benign static image request with no parameters or anomalies.",
+          "W3": "Request matches normal application traffic pattern with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-102",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match typical registration form traffic for this application.",
+          "W2": "Parameters match expected registration fields with no anomalous or malicious content indicated by structure analysis.",
+          "W3": "Structure, path, and parameters match normal legitimate registration traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-100",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value content match normal traffic for this application.",
+          "W2": "Request matches normal application traffic patterns with no evidence of malicious payloads or anomalies.",
+          "W3": "Path, parameters, and method match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-013",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameters, and method all match normal traffic patterns for this application.",
+          "W2": "The request is a benign GET with no parameters and matches normal application traffic patterns.",
+          "W3": "Path, parameters, and method align with normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-143",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method match normal traffic and the value is a typical error message string.",
+          "W2": "The request matches normal application patterns with no evidence of malicious payloads or anomalies.",
+          "W3": "The request matches normal application structure and parameters, indicating ordinary sanctioned use."
+        }
+      },
+      {
+        "case_id": "attack-003",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The B2 parameter contains an embedded script tag, which is anomalous content not seen in normal traffic.",
+          "W2": "The parameter contains an embedded script tag indicative of XSS, which could compromise data integrity/confidentiality if reflected or executed.",
+          "W3": "The parameter contains an injected script tag typical of XSS testing/attack, not legitimate input."
+        }
+      },
+      {
+        "case_id": "benign-022",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic, and parameter values appear typical.",
+          "W2": "Parameters and structure match normal expected traffic with no evidence of malicious or anomalous content.",
+          "W3": "The path, parameters, and method all match normal sanctioned traffic patterns for this application."
+        }
+      },
+      {
+        "case_id": "attack-015",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'idA' is not a known parameter for this path, which normally uses 'id'.",
+          "W2": "An unexpected parameter name alone does not demonstrate any impact on confidentiality, integrity, or availability.",
+          "W3": "The parameter 'idA' is not a known parameter for this path, indicating non-standard usage."
+        }
+      },
+      {
+        "case_id": "attack-023",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, and method match normal traffic patterns for this application.",
+          "W2": "The request matches normal application traffic patterns with no evident malicious or anomalous input.",
+          "W3": "Path, method, and parameters match normal application traffic patterns."
+        }
+      },
+      {
+        "case_id": "benign-112",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Structure and parameter values match normal registration traffic for this application.",
+          "W2": "Parameters and structure match expected registration traffic with no evidence of malicious payloads.",
+          "W3": "Structure, path, method, and parameters match normal legitimate registration traffic for this application."
+        }
+      },
+      {
+        "case_id": "benign-029",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and lack of parameters match normal traffic patterns for this application.",
+          "W2": "Request is a simple GET with no parameters and matches normal application traffic, posing no risk to CIA.",
+          "W3": "Path, parameters, and method match normal legitimate traffic patterns for this application."
+        }
+      },
+      {
+        "case_id": "benign-020",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and lack of parameters match normal traffic patterns for this application.",
+          "W2": "The request is a plain GET with no parameters and matches normal traffic patterns, posing no risk to confidentiality, integrity, or availability.",
+          "W3": "Path, parameters, and method all match normal application traffic with no anomalies."
+        }
+      },
+      {
+        "case_id": "benign-034",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and parameters (none) match normal traffic patterns for this application.",
+          "W2": "The request is a normal GET with no parameters and matches expected application traffic, posing no risk to confidentiality, integrity, or availability.",
+          "W3": "The request matches normal application traffic patterns with no anomalous parameters or structure."
+        }
+      },
+      {
+        "case_id": "attack-013",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": false,
+          "W2": true,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, method, and parameter names match normal traffic and values appear typical.",
+          "W2": "The precio parameter controls price and could be tampered with to affect data integrity.",
+          "W3": "Path, method, and parameters match normal sanctioned application traffic."
+        }
+      },
+      {
+        "case_id": "attack-026",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The path includes an unusual numeric suffix appended to a static file, which does not match normal traffic patterns.",
+          "W2": "A GET to a static image path with an odd suffix shows no indication of exploit potential affecting confidentiality, integrity, or availability.",
+          "W3": "Appending a random numeric string to a static image path is not a pattern seen in normal application use."
+        }
+      },
+      {
+        "case_id": "attack-002",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The requested path is not part of normal application traffic.",
+          "W2": "Requesting newdsn.exe targets a known vulnerable script that could allow unauthorized data source configuration or code execution.",
+          "W3": "Requesting a nonexistent, suspicious executable script path is not part of normal application usage."
+        }
+      },
+      {
+        "case_id": "attack-021",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": true
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The parameter 'ntcA' is not among the known parameters for this path, indicating a structural deviation.",
+          "W2": "An unexpected parameter (ntcA) not part of the known schema could indicate parameter tampering or injection risk affecting data integrity.",
+          "W3": "Unknown parameter 'ntcA' replacing the expected 'ntc' indicates deviation from normal application usage."
+        }
+      },
+      {
+        "case_id": "benign-023",
+        "family": "benign_plain",
+        "label": "benign",
+        "conditions": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "Path, parameter names, method, and value formats match normal traffic for this application.",
+          "W2": "Parameters and structure match normal authentication traffic with no evidence of malicious payloads.",
+          "W3": "Path, parameters, and method match normal application traffic with no anomalous indicators."
+        }
+      },
+      {
+        "case_id": "benign-124",
+        "family": "benign_hard",
+        "label": "benign",
+        "conditions": {
+          "W1": true,
+          "W2": false,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The email parameter contains a space, which is anomalous content for that field.",
+          "W2": "Parameters match expected registration fields with no evidence of malicious payloads affecting confidentiality, integrity, or availability.",
+          "W3": "The request matches the application's normal registration path, parameters, and method."
+        }
+      },
+      {
+        "case_id": "attack-006",
+        "family": "csic_attack",
+        "label": "attack",
+        "conditions": {
+          "W1": true,
+          "W2": true,
+          "W3": false
+        },
+        "failed": {
+          "W1": false,
+          "W2": false,
+          "W3": false
+        },
+        "reasons": {
+          "W1": "The password parameter contains an unusual special character (apostrophe) not typical of normal registration values.",
+          "W2": "The password field contains an unescaped single quote that could enable SQL injection affecting data integrity/confidentiality.",
+          "W3": "The request matches the application's normal path, method, and parameters for a registration form submission."
+        }
+      }
+    ]
+  }
+}

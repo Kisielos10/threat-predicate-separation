@@ -1,0 +1,530 @@
+{
+  "metrics": {
+    "detector": {
+      "n": 450,
+      "TP": 217,
+      "FP": 56,
+      "TN": 169,
+      "FN": 8,
+      "TPR": 0.964,
+      "FPR": 0.249,
+      "Precision": 0.795,
+      "F1": 0.871,
+      "Accuracy": 0.858,
+      "TPR_strict_atak": 0.964,
+      "unknown_rate": 0.0,
+      "mean_confidence": 0.965,
+      "mean_seconds": 0.07,
+      "mean_llm_calls": 0.0,
+      "audit_sendbacks": 0
+    },
+    "mas": {
+      "n": 450,
+      "TP": 185,
+      "FP": 50,
+      "TN": 175,
+      "FN": 40,
+      "TPR": 0.822,
+      "FPR": 0.222,
+      "Precision": 0.787,
+      "F1": 0.804,
+      "Accuracy": 0.8,
+      "TPR_strict_atak": 0.227,
+      "unknown_rate": 0.409,
+      "mean_confidence": 0.778,
+      "mean_seconds": 37.85,
+      "mean_llm_calls": 5.85,
+      "audit_sendbacks": 96
+    },
+    "mas_full": {
+      "n": 450,
+      "TP": 203,
+      "FP": 45,
+      "TN": 180,
+      "FN": 22,
+      "TPR": 0.902,
+      "FPR": 0.2,
+      "Precision": 0.819,
+      "F1": 0.858,
+      "Accuracy": 0.851,
+      "TPR_strict_atak": 0.347,
+      "unknown_rate": 0.351,
+      "mean_confidence": 0.812,
+      "mean_seconds": 46.01,
+      "mean_llm_calls": 8.15,
+      "audit_sendbacks": 139
+    },
+    "single_agent": {
+      "n": 450,
+      "TP": 213,
+      "FP": 74,
+      "TN": 151,
+      "FN": 12,
+      "TPR": 0.947,
+      "FPR": 0.329,
+      "Precision": 0.742,
+      "F1": 0.832,
+      "Accuracy": 0.809,
+      "TPR_strict_atak": 0.698,
+      "unknown_rate": 0.173,
+      "mean_confidence": 0.868,
+      "mean_seconds": 24.76,
+      "mean_llm_calls": 4.49,
+      "audit_sendbacks": 0
+    }
+  },
+  "metrics_across_runs": {
+    "detector": {
+      "n": {
+        "mean": 150.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "TP": {
+        "mean": 72.333,
+        "ci95": 0.653,
+        "n": 3
+      },
+      "FP": {
+        "mean": 18.667,
+        "ci95": 4.711,
+        "n": 3
+      },
+      "TN": {
+        "mean": 56.333,
+        "ci95": 4.711,
+        "n": 3
+      },
+      "FN": {
+        "mean": 2.667,
+        "ci95": 0.653,
+        "n": 3
+      },
+      "TPR": {
+        "mean": 0.964,
+        "ci95": 0.008,
+        "n": 3
+      },
+      "FPR": {
+        "mean": 0.249,
+        "ci95": 0.063,
+        "n": 3
+      },
+      "Precision": {
+        "mean": 0.796,
+        "ci95": 0.041,
+        "n": 3
+      },
+      "F1": {
+        "mean": 0.872,
+        "ci95": 0.022,
+        "n": 3
+      },
+      "Accuracy": {
+        "mean": 0.858,
+        "ci95": 0.029,
+        "n": 3
+      },
+      "TPR_strict_atak": {
+        "mean": 0.964,
+        "ci95": 0.008,
+        "n": 3
+      },
+      "unknown_rate": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "mean_confidence": {
+        "mean": 0.965,
+        "ci95": 0.01,
+        "n": 3
+      },
+      "mean_seconds": {
+        "mean": 0.073,
+        "ci95": 0.017,
+        "n": 3
+      },
+      "mean_llm_calls": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "audit_sendbacks": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      }
+    },
+    "mas": {
+      "n": {
+        "mean": 150.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "TP": {
+        "mean": 61.667,
+        "ci95": 3.638,
+        "n": 3
+      },
+      "FP": {
+        "mean": 16.667,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "TN": {
+        "mean": 58.333,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "FN": {
+        "mean": 13.333,
+        "ci95": 3.638,
+        "n": 3
+      },
+      "TPR": {
+        "mean": 0.822,
+        "ci95": 0.049,
+        "n": 3
+      },
+      "FPR": {
+        "mean": 0.222,
+        "ci95": 0.023,
+        "n": 3
+      },
+      "Precision": {
+        "mean": 0.788,
+        "ci95": 0.01,
+        "n": 3
+      },
+      "F1": {
+        "mean": 0.804,
+        "ci95": 0.021,
+        "n": 3
+      },
+      "Accuracy": {
+        "mean": 0.8,
+        "ci95": 0.015,
+        "n": 3
+      },
+      "TPR_strict_atak": {
+        "mean": 0.227,
+        "ci95": 0.04,
+        "n": 3
+      },
+      "unknown_rate": {
+        "mean": 0.409,
+        "ci95": 0.034,
+        "n": 3
+      },
+      "mean_confidence": {
+        "mean": 0.778,
+        "ci95": 0.007,
+        "n": 3
+      },
+      "mean_seconds": {
+        "mean": 37.853,
+        "ci95": 5.305,
+        "n": 3
+      },
+      "mean_llm_calls": {
+        "mean": 5.853,
+        "ci95": 0.062,
+        "n": 3
+      },
+      "audit_sendbacks": {
+        "mean": 32.0,
+        "ci95": 2.263,
+        "n": 3
+      }
+    },
+    "mas_full": {
+      "n": {
+        "mean": 150.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "TP": {
+        "mean": 67.667,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "FP": {
+        "mean": 15.0,
+        "ci95": 2.994,
+        "n": 3
+      },
+      "TN": {
+        "mean": 60.0,
+        "ci95": 2.994,
+        "n": 3
+      },
+      "FN": {
+        "mean": 7.333,
+        "ci95": 1.729,
+        "n": 3
+      },
+      "TPR": {
+        "mean": 0.902,
+        "ci95": 0.023,
+        "n": 3
+      },
+      "FPR": {
+        "mean": 0.2,
+        "ci95": 0.04,
+        "n": 3
+      },
+      "Precision": {
+        "mean": 0.819,
+        "ci95": 0.032,
+        "n": 3
+      },
+      "F1": {
+        "mean": 0.858,
+        "ci95": 0.024,
+        "n": 3
+      },
+      "Accuracy": {
+        "mean": 0.851,
+        "ci95": 0.026,
+        "n": 3
+      },
+      "TPR_strict_atak": {
+        "mean": 0.347,
+        "ci95": 0.061,
+        "n": 3
+      },
+      "unknown_rate": {
+        "mean": 0.351,
+        "ci95": 0.043,
+        "n": 3
+      },
+      "mean_confidence": {
+        "mean": 0.812,
+        "ci95": 0.011,
+        "n": 3
+      },
+      "mean_seconds": {
+        "mean": 46.007,
+        "ci95": 0.491,
+        "n": 3
+      },
+      "mean_llm_calls": {
+        "mean": 8.153,
+        "ci95": 0.062,
+        "n": 3
+      },
+      "audit_sendbacks": {
+        "mean": 46.333,
+        "ci95": 2.356,
+        "n": 3
+      }
+    },
+    "single_agent": {
+      "n": {
+        "mean": 150.0,
+        "ci95": 0.0,
+        "n": 3
+      },
+      "TP": {
+        "mean": 71.0,
+        "ci95": 1.132,
+        "n": 3
+      },
+      "FP": {
+        "mean": 24.667,
+        "ci95": 2.356,
+        "n": 3
+      },
+      "TN": {
+        "mean": 50.333,
+        "ci95": 2.356,
+        "n": 3
+      },
+      "FN": {
+        "mean": 4.0,
+        "ci95": 1.132,
+        "n": 3
+      },
+      "TPR": {
+        "mean": 0.947,
+        "ci95": 0.015,
+        "n": 3
+      },
+      "FPR": {
+        "mean": 0.329,
+        "ci95": 0.031,
+        "n": 3
+      },
+      "Precision": {
+        "mean": 0.742,
+        "ci95": 0.018,
+        "n": 3
+      },
+      "F1": {
+        "mean": 0.832,
+        "ci95": 0.012,
+        "n": 3
+      },
+      "Accuracy": {
+        "mean": 0.809,
+        "ci95": 0.016,
+        "n": 3
+      },
+      "TPR_strict_atak": {
+        "mean": 0.698,
+        "ci95": 0.046,
+        "n": 3
+      },
+      "unknown_rate": {
+        "mean": 0.173,
+        "ci95": 0.026,
+        "n": 3
+      },
+      "mean_confidence": {
+        "mean": 0.868,
+        "ci95": 0.019,
+        "n": 3
+      },
+      "mean_seconds": {
+        "mean": 24.76,
+        "ci95": 3.341,
+        "n": 3
+      },
+      "mean_llm_calls": {
+        "mean": 4.493,
+        "ci95": 0.074,
+        "n": 3
+      },
+      "audit_sendbacks": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 3
+      }
+    }
+  },
+  "calibration": {
+    "detector": {
+      "mean_conf_correct": 0.969,
+      "mean_conf_wrong": 0.936,
+      "n_correct": 386,
+      "n_wrong": 64
+    },
+    "mas": {
+      "mean_conf_correct": 0.78,
+      "mean_conf_wrong": 0.771,
+      "n_correct": 360,
+      "n_wrong": 90
+    },
+    "mas_full": {
+      "mean_conf_correct": 0.818,
+      "mean_conf_wrong": 0.775,
+      "n_correct": 383,
+      "n_wrong": 67
+    },
+    "single_agent": {
+      "mean_conf_correct": 0.878,
+      "mean_conf_wrong": 0.827,
+      "n_correct": 364,
+      "n_wrong": 86
+    }
+  },
+  "sendback": {
+    "n_mas_cases": 450,
+    "sendback_count": 96,
+    "sendback_rate": 0.213,
+    "decision_flipped_after_sendback": 21,
+    "final_decision_correct_after_flip": 14,
+    "flip_corrected_alert_level": 1,
+    "flip_broke_alert_level": 2,
+    "flip_directions": {
+      "atak -> normalne": 3,
+      "atak -> nieznane": 18
+    },
+    "missing_evidence_counts": {
+      "novelty_score": 51,
+      "payload_inspect": 50
+    }
+  },
+  "conditions_W1_W2_W3": {
+    "attack": {
+      "W1": 0.591,
+      "W2": 0.191,
+      "W3": 0.636,
+      "n": 225
+    },
+    "benign": {
+      "W1": 0.084,
+      "W2": 0.0,
+      "W3": 0.156,
+      "n": 225
+    }
+  },
+  "n_runs": 3,
+  "sendback_by_config": {
+    "mas": {
+      "n_mas_cases": 450,
+      "sendback_count": 96,
+      "sendback_rate": 0.213,
+      "decision_flipped_after_sendback": 21,
+      "final_decision_correct_after_flip": 14,
+      "flip_corrected_alert_level": 1,
+      "flip_broke_alert_level": 2,
+      "flip_directions": {
+        "atak -> normalne": 3,
+        "atak -> nieznane": 18
+      },
+      "missing_evidence_counts": {
+        "novelty_score": 51,
+        "payload_inspect": 50
+      }
+    },
+    "mas_full": {
+      "n_mas_cases": 450,
+      "sendback_count": 139,
+      "sendback_rate": 0.309,
+      "decision_flipped_after_sendback": 48,
+      "final_decision_correct_after_flip": 34,
+      "flip_corrected_alert_level": 3,
+      "flip_broke_alert_level": 5,
+      "flip_directions": {
+        "atak -> nieznane": 40,
+        "atak -> normalne": 8
+      },
+      "missing_evidence_counts": {
+        "novelty_score": 105,
+        "payload_inspect": 35
+      }
+    }
+  },
+  "conditions_by_config": {
+    "mas": {
+      "attack": {
+        "W1": 0.591,
+        "W2": 0.191,
+        "W3": 0.636,
+        "n": 225
+      },
+      "benign": {
+        "W1": 0.084,
+        "W2": 0.0,
+        "W3": 0.156,
+        "n": 225
+      }
+    },
+    "mas_full": {
+      "attack": {
+        "W1": 0.813,
+        "W2": 0.311,
+        "W3": 0.844,
+        "n": 225
+      },
+      "benign": {
+        "W1": 0.151,
+        "W2": 0.053,
+        "W3": 0.173,
+        "n": 225
+      }
+    }
+  }
+}
