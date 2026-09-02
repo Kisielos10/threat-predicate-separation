@@ -1,0 +1,21 @@
+{
+  "title": "Threat as a Checkable Predicate: code and results",
+  "description": "<p>Code and result artefacts for the paper <em>Threat as a Checkable Predicate: What Anomaly-Based Web Detection Omits</em>.</p><p>An anomaly-based intrusion detector reports that a request is unusual; what matters operationally is whether it is harmful. Public intrusion-detection corpora contain only ordinary traffic and attacks, with no legitimate-but-unusual category, so a detector's inability to separate the two is invisible under standard evaluation. This repository constructs the missing category from requests a corpus already labels normal, and measures separation: the rate at which a criterion fires on attacks minus the rate at which it fires on legitimate anomalies.</p><p>Contents: the probe generator and its validity guards, independent per-condition assessment of a formal threat predicate, faithful implementations of the Kruegel-Vigna character-distribution model and PAYL, a three-role multi-agent system, a threat relation graph, and the result artefacts backing every number reported in the paper.</p><p>Corpora are not redistributed; download instructions are in the README.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Kisielewicz, Maciej",
+      "affiliation": "Wrocław University of Science and Technology"
+    }
+  ],
+  "keywords": [
+    "intrusion detection",
+    "anomaly detection",
+    "web application security",
+    "evaluation methodology",
+    "threat modelling",
+    "open-set recognition"
+  ],
+  "access_right": "open"
+}
