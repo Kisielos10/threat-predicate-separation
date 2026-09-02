@@ -126,24 +126,6 @@ re-running any experiment:
 python consolidate_results.py && python make_paper_figures.py
 ```
 
-## Honest scope
-
-- Every condition result rests on a **single web corpus**, CSIC-2010. This is the most important
-  remaining limitation.
-- The probe set is **constructed, not collected**, which is the gap the work exploits and also its
-  main methodological exposure.
-- Language models are used here as **instruments** to test whether the conditions are assessable
-  from observable evidence. Nothing here proposes putting a language model into a detection
-  pipeline.
-- Condition assessments are validated by their discriminative behaviour, not against a reference
-  standard. There is no ground truth for "could this violate confidentiality"; establishing that
-  would need multiple independent annotators.
-- The hosted model rejects a temperature parameter, so unlike the three local models it is not
-  pinned to greedy decoding and its results are not reproducible in the same sense.
-- Nothing is trained. Models are used zero-shot, the sentence encoder is frozen, clustering is
-  unsupervised. Labels enter at exactly one point, calibrating the baseline detector's threshold,
-  which favours the baseline rather than the method under study.
-
 ## Licence
 
 MIT. See `LICENSE`.
