@@ -1,5 +1,7 @@
 # Threat as a Checkable Predicate
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22675339.svg)](https://doi.org/10.5281/zenodo.22675339)
+
 Code and results for the paper *Threat as a Checkable Predicate: What Anomaly-Based Web Detection
 Omits*.
 
@@ -125,6 +127,13 @@ re-running any experiment:
 ```bash
 python consolidate_results.py && python make_paper_figures.py
 ```
+
+## Citing
+
+Archived on Zenodo. The concept DOI [10.5281/zenodo.22675339](https://doi.org/10.5281/zenodo.22675339)
+always resolves to the latest version; [10.5281/zenodo.22675340](https://doi.org/10.5281/zenodo.22675340)
+pins v1.0.0, the snapshot the paper's results come from. `CITATION.cff` carries the machine-readable
+form.
 
 ## Licence
 

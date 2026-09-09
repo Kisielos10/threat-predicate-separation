@@ -12,6 +12,9 @@ authors:
     affiliation: "Wrocław University of Science and Technology"
 license: MIT
 repository-code: "https://github.com/Kisielos10/threat-predicate-separation"
+doi: "10.5281/zenodo.22675339"
+version: "1.0.0"
+date-released: "2026-09-09"
 keywords:
   - intrusion detection
   - anomaly detection
