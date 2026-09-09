@@ -102,6 +102,14 @@ python run_scaled_experiment.py 300 2000
 python run_flow_check.py
 ```
 
+The robustness check partitions the attacks by how they depart from normal traffic and rescores
+each partition against the same probes, which tests whether the inversion is an artefact of that
+asymmetry:
+
+```bash
+python run_robustness_check.py
+```
+
 The condition assessments call a language model once per condition per case. Local models are
 served through [Ollama](https://ollama.com); the hosted model reads `ZDV_LLM_API_KEY` from the
 environment and is never stored in this repository.

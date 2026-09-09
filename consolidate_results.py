@@ -92,6 +92,7 @@ if d:
 
 # --- published baselines, graph-based W2, flow domain ---------------------------------------
 for key, path in (("published_baselines", "paper/main_experiment.json"),
+                  ("robustness", "conditions/robustness_check.json"),
                   ("graph_w2", "conditions/w2_check.json"),
                   ("flow_domain", "conditions/flow_check.json")):
     d = load(path)

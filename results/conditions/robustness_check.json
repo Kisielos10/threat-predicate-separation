@@ -1,0 +1,133 @@
+{
+  "n": {
+    "cal_n": 500,
+    "cal_a": 500,
+    "probe": 300,
+    "attack_all": 300,
+    "attack_value_only": 135,
+    "attack_unknown_parameter": 96,
+    "attack_unknown_path": 69
+  },
+  "detectors": {
+    "char-distribution (Kruegel & Vigna 2003)": {
+      "probe_rate": 0.963,
+      "threshold": 4.181166601036068e-05,
+      "attack_all": {
+        "rate": 0.69,
+        "separation": -0.273,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.822,
+        "separation": -0.141,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 1.0,
+        "separation": 0.037,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.0,
+        "separation": -0.963,
+        "n": 69
+      }
+    },
+    "PAYL byte frequency (Wang & Stolfo 2004)": {
+      "probe_rate": 1.0,
+      "threshold": 42.64686457101885,
+      "attack_all": {
+        "rate": 0.587,
+        "separation": -0.413,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.748,
+        "separation": -0.252,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 0.781,
+        "separation": -0.219,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.0,
+        "separation": -1.0,
+        "n": 69
+      }
+    },
+    "one-class SVM (char n-gram)": {
+      "probe_rate": 0.667,
+      "threshold": 0.003218962998490227,
+      "attack_all": {
+        "rate": 0.697,
+        "separation": 0.03,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.585,
+        "separation": -0.081,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 0.688,
+        "separation": 0.021,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.928,
+        "separation": 0.261,
+        "n": 69
+      }
+    },
+    "isolation forest (char n-gram)": {
+      "probe_rate": 1.0,
+      "threshold": 0.35140158855373055,
+      "attack_all": {
+        "rate": 0.807,
+        "separation": -0.193,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.97,
+        "separation": -0.03,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.217,
+        "separation": -0.783,
+        "n": 69
+      }
+    },
+    "PCA reconstruction error": {
+      "probe_rate": 1.0,
+      "threshold": 0.08412210409463212,
+      "attack_all": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 69
+      }
+    }
+  }
+}
