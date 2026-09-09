@@ -10,6 +10,7 @@ authors:
   - family-names: Kisielewicz
     given-names: Maciej
     affiliation: "Wrocław University of Science and Technology"
+    orcid: "https://orcid.org/0009-0007-9704-7110"
 license: MIT
 repository-code: "https://github.com/Kisielos10/threat-predicate-separation"
 doi: "10.5281/zenodo.22675339"
