@@ -90,10 +90,12 @@ Corpora are not redistributed here. Download them into `data/`:
 
 ### Experiments
 
-The detector comparison and the flow-domain control need no language model and finish in minutes:
+The detector comparison and the flow-domain control need no language model and finish in minutes.
+`run_scaled_experiment.py` is the script behind the reported detector table; its defaults are the
+values used in the paper:
 
 ```bash
-python run_baseline_check.py
+python run_scaled_experiment.py 300 2000
 ```
 
 ```bash

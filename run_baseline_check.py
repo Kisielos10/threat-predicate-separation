@@ -1,4 +1,18 @@
-"""Check 3: do PUBLISHED / standard anomaly detectors fail the same way ours does?
+"""SUPERSEDED. Kept for provenance; do not use for the paper's numbers.
+
+This early version scored a GLOBAL sorted character distribution and labelled it "Kruegel &
+Vigna". Their design is per-(resource, parameter) with a threshold learned per model, which is a
+materially different detector: on the same data this file reports a separation of about +0.2
+where the faithful implementation reports -0.27. The analysis it produced was retracted.
+
+The detector comparison reported in the paper is produced by `run_scaled_experiment.py`, which
+uses the faithful `KruegelVignaICD` and `PAYL` in `zeroday_verify.baselines` and writes
+`results/paper/main_experiment.json`. That file, not `baseline_check.json`, is what
+`consolidate_results.py` reads.
+
+Original docstring follows.
+
+Check 3: do PUBLISHED / standard anomaly detectors fail the same way ours does?
 
 The paper claims something about a class of methods, not about one detector we wrote. That claim
 is only credible if standard approaches from the literature reproduce the failure. All detectors
