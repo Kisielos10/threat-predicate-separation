@@ -110,18 +110,33 @@ asymmetry:
 python run_robustness_check.py
 ```
 
+The subtype check partitions attacks into static, tampering, injection and unsignatured requests,
+the injection subset being the one free of both structural and labelling effects. It makes no
+model calls:
+
+```bash
+python run_subtype_check.py
+```
+
+The direct-verdict control asks each model outright whether a request is an attack, on the cases
+and evidence of the condition runs:
+
+```bash
+python run_verdict_control.py 150 qwen2.5:7b llama3.1:8b mistral:7b && python analyse_verdict_control.py
+```
+
 The condition assessments call a language model once per condition per case. Local models are
 served through [Ollama](https://ollama.com); the hosted model reads `ZDV_LLM_API_KEY` from the
 environment and is never stored in this repository.
 
 ```bash
-ollama pull qwen2.5:7b && python run_conditions_check.py 40 qwen2.5:7b --generated
+ollama pull qwen2.5:7b && python run_conditions_check.py 150 qwen2.5:7b --generated
 ```
 
 The ablation that withholds the detector's score from the evidence bundle:
 
 ```bash
-python run_conditions_check.py 40 qwen2.5:7b --generated --no-novelty
+python run_conditions_check.py 150 qwen2.5:7b --generated --no-novelty
 ```
 
 The multi-agent comparison is the expensive one, roughly eight hours for three seeds, because

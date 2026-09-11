@@ -199,10 +199,16 @@ def load_hard_negative_setup(
     plain = [_case(r, i, "benign") for i, r in enumerate(ev_norm["requests"])]
     for c in plain:
         c.family = "benign_plain"
-    hardc = [_case(r, 100 + i, "benign") for i, r in enumerate(hard)]
+    # Probes are numbered after the ordinary cases, never from a fixed offset. A fixed offset of
+    # 100 was safe while groups held at most 100 cases, and silently collided beyond that: at 150
+    # per group, 50 probes shared an ID with the ordinary request they were derived from, and every
+    # structure keyed by ID (evidence bundles, detector flags) merged each such pair into one.
+    hardc = [_case(r, len(plain) + i, "benign") for i, r in enumerate(hard)]
     for c in hardc:
         c.family = "benign_hard"
     cases = cases + plain + hardc
+    ids = [c.case_id for c in cases]
+    assert len(ids) == len(set(ids)), "case IDs collide; results keyed by ID would merge cases"
     rng.shuffle(cases)
 
     threshold = calibrate_threshold(ctx, cal_norm["requests"].tolist(),

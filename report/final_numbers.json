@@ -146,54 +146,54 @@
           "W1": {
             "csic_attack": 0.906,
             "csic_attack_n": 149,
-            "benign_hard": 0.707,
+            "benign_hard": 0.833,
             "benign_hard_n": 150,
-            "benign_plain": 0.247,
+            "benign_plain": 0.14,
             "benign_plain_n": 150,
-            "separation": 0.199
+            "separation": 0.073
           },
           "W2": {
             "csic_attack": 0.207,
             "csic_attack_n": 150,
             "benign_hard": 0.027,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
             "separation": 0.18
           },
           "W3": {
             "csic_attack": 0.407,
             "csic_attack_n": 150,
-            "benign_hard": 0.067,
+            "benign_hard": 0.073,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.34
+            "separation": 0.334
           },
           "W1_and_W2": {
             "csic_attack": 0.201,
             "csic_attack_n": 149,
             "benign_hard": 0.027,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
             "separation": 0.174
           },
           "W1_and_W3": {
             "csic_attack": 0.403,
             "csic_attack_n": 149,
-            "benign_hard": 0.067,
+            "benign_hard": 0.073,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.336
+            "separation": 0.33
           },
           "W2_and_W3": {
             "csic_attack": 0.18,
             "csic_attack_n": 150,
             "benign_hard": 0.02,
             "benign_hard_n": 150,
-            "benign_plain": 0.007,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
             "separation": 0.16
           },
@@ -202,112 +202,122 @@
             "csic_attack_n": 149,
             "benign_hard": 0.02,
             "benign_hard_n": 150,
-            "benign_plain": 0.007,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
             "separation": 0.154
           }
         },
         "detector": {
           "csic_attack": 0.96,
-          "benign_hard": 0.84,
-          "benign_plain": 0.327,
-          "separation": 0.12
+          "benign_hard": 1.0,
+          "benign_plain": 0.2,
+          "separation": -0.04
         },
         "unusable": 1,
-        "n_calls": 1350
+        "n_calls": 1350,
+        "agreement": {
+          "W1=W3": 0.535,
+          "W1=W2": 0.452,
+          "W2=W3": 0.891
+        }
       },
       "llama3.1:8b": {
         "criteria": {
           "W1": {
             "csic_attack": 0.653,
             "csic_attack_n": 150,
-            "benign_hard": 0.167,
+            "benign_hard": 0.233,
             "benign_hard_n": 150,
-            "benign_plain": 0.06,
+            "benign_plain": 0.047,
             "benign_plain_n": 150,
-            "separation": 0.486
+            "separation": 0.42
           },
           "W2": {
             "csic_attack": 0.607,
             "csic_attack_n": 150,
-            "benign_hard": 0.327,
+            "benign_hard": 0.42,
             "benign_hard_n": 150,
-            "benign_plain": 0.147,
+            "benign_plain": 0.107,
             "benign_plain_n": 150,
-            "separation": 0.28
+            "separation": 0.187
           },
           "W3": {
             "csic_attack": 0.653,
             "csic_attack_n": 150,
-            "benign_hard": 0.093,
+            "benign_hard": 0.147,
             "benign_hard_n": 150,
-            "benign_plain": 0.02,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.56
+            "separation": 0.506
           },
           "W1_and_W2": {
             "csic_attack": 0.447,
             "csic_attack_n": 150,
-            "benign_hard": 0.16,
+            "benign_hard": 0.227,
             "benign_hard_n": 150,
-            "benign_plain": 0.04,
+            "benign_plain": 0.013,
             "benign_plain_n": 150,
-            "separation": 0.287
+            "separation": 0.22
           },
           "W1_and_W3": {
             "csic_attack": 0.607,
             "csic_attack_n": 150,
-            "benign_hard": 0.093,
+            "benign_hard": 0.147,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
-            "separation": 0.514
+            "separation": 0.46
           },
           "W2_and_W3": {
             "csic_attack": 0.453,
             "csic_attack_n": 150,
-            "benign_hard": 0.093,
+            "benign_hard": 0.147,
             "benign_hard_n": 150,
-            "benign_plain": 0.02,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.36
+            "separation": 0.306
           },
           "T_S": {
             "csic_attack": 0.407,
             "csic_attack_n": 150,
-            "benign_hard": 0.093,
+            "benign_hard": 0.147,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
-            "separation": 0.314
+            "separation": 0.26
           }
         },
         "detector": {
           "csic_attack": 0.96,
-          "benign_hard": 0.84,
-          "benign_plain": 0.327,
-          "separation": 0.12
+          "benign_hard": 1.0,
+          "benign_plain": 0.2,
+          "separation": -0.04
         },
         "unusable": 0,
-        "n_calls": 1350
+        "n_calls": 1350,
+        "agreement": {
+          "W1=W3": 0.922,
+          "W1=W2": 0.769,
+          "W2=W3": 0.758
+        }
       },
       "mistral:7b": {
         "criteria": {
           "W1": {
             "csic_attack": 0.753,
             "csic_attack_n": 150,
-            "benign_hard": 0.62,
+            "benign_hard": 0.713,
             "benign_hard_n": 150,
-            "benign_plain": 0.22,
+            "benign_plain": 0.127,
             "benign_plain_n": 150,
-            "separation": 0.133
+            "separation": 0.04
           },
           "W2": {
             "csic_attack": 0.333,
             "csic_attack_n": 150,
             "benign_hard": 0.013,
             "benign_hard_n": 150,
-            "benign_plain": 0.007,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
             "separation": 0.32
           },
@@ -325,7 +335,7 @@
             "csic_attack_n": 150,
             "benign_hard": 0.013,
             "benign_hard_n": 150,
-            "benign_plain": 0.007,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
             "separation": 0.307
           },
@@ -359,89 +369,17 @@
         },
         "detector": {
           "csic_attack": 0.96,
-          "benign_hard": 0.84,
-          "benign_plain": 0.327,
-          "separation": 0.12
+          "benign_hard": 1.0,
+          "benign_plain": 0.2,
+          "separation": -0.04
         },
         "unusable": 0,
-        "n_calls": 1350
-      }
-    },
-    "with_novelty_sonnet": {
-      "claude-sonnet-5": {
-        "criteria": {
-          "W1": {
-            "csic_attack": 0.733,
-            "csic_attack_n": 150,
-            "benign_hard": 0.02,
-            "benign_hard_n": 150,
-            "benign_plain": 0.0,
-            "benign_plain_n": 150,
-            "separation": 0.713
-          },
-          "W2": {
-            "csic_attack": 0.387,
-            "csic_attack_n": 150,
-            "benign_hard": 0.007,
-            "benign_hard_n": 150,
-            "benign_plain": 0.0,
-            "benign_plain_n": 150,
-            "separation": 0.38
-          },
-          "W3": {
-            "csic_attack": 0.66,
-            "csic_attack_n": 150,
-            "benign_hard": 0.0,
-            "benign_hard_n": 150,
-            "benign_plain": 0.0,
-            "benign_plain_n": 150,
-            "separation": 0.66
-          },
-          "W1_and_W2": {
-            "csic_attack": 0.387,
-            "csic_attack_n": 150,
-            "benign_hard": 0.0,
-            "benign_hard_n": 150,
-            "benign_plain": 0.0,
-            "benign_plain_n": 150,
-            "separation": 0.387
-          },
-          "W1_and_W3": {
-            "csic_attack": 0.66,
-            "csic_attack_n": 150,
-            "benign_hard": 0.0,
-            "benign_hard_n": 150,
-            "benign_plain": 0.0,
-            "benign_plain_n": 150,
-            "separation": 0.66
-          },
-          "W2_and_W3": {
-            "csic_attack": 0.367,
-            "csic_attack_n": 150,
-            "benign_hard": 0.0,
-            "benign_hard_n": 150,
-            "benign_plain": 0.0,
-            "benign_plain_n": 150,
-            "separation": 0.367
-          },
-          "T_S": {
-            "csic_attack": 0.367,
-            "csic_attack_n": 150,
-            "benign_hard": 0.0,
-            "benign_hard_n": 150,
-            "benign_plain": 0.0,
-            "benign_plain_n": 150,
-            "separation": 0.367
-          }
-        },
-        "detector": {
-          "csic_attack": 0.96,
-          "benign_hard": 0.84,
-          "benign_plain": 0.327,
-          "separation": 0.12
-        },
-        "unusable": 0,
-        "n_calls": 1350
+        "n_calls": 1350,
+        "agreement": {
+          "W1=W3": 0.693,
+          "W1=W2": 0.576,
+          "W2=W3": 0.878
+        }
       }
     },
     "no_novelty_local": {
@@ -450,150 +388,160 @@
           "W1": {
             "csic_attack": 0.733,
             "csic_attack_n": 150,
-            "benign_hard": 0.167,
+            "benign_hard": 0.187,
             "benign_hard_n": 150,
-            "benign_plain": 0.047,
+            "benign_plain": 0.013,
             "benign_plain_n": 150,
-            "separation": 0.566
+            "separation": 0.546
           },
           "W2": {
             "csic_attack": 0.227,
             "csic_attack_n": 150,
-            "benign_hard": 0.107,
+            "benign_hard": 0.14,
             "benign_hard_n": 150,
-            "benign_plain": 0.033,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.12
+            "separation": 0.087
           },
           "W3": {
             "csic_attack": 0.633,
             "csic_attack_n": 150,
-            "benign_hard": 0.233,
+            "benign_hard": 0.267,
             "benign_hard_n": 150,
-            "benign_plain": 0.067,
+            "benign_plain": 0.027,
             "benign_plain_n": 150,
-            "separation": 0.4
+            "separation": 0.366
           },
           "W1_and_W2": {
             "csic_attack": 0.22,
             "csic_attack_n": 150,
-            "benign_hard": 0.08,
+            "benign_hard": 0.087,
             "benign_hard_n": 150,
-            "benign_plain": 0.02,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
-            "separation": 0.14
+            "separation": 0.133
           },
           "W1_and_W3": {
             "csic_attack": 0.593,
             "csic_attack_n": 150,
-            "benign_hard": 0.147,
+            "benign_hard": 0.16,
             "benign_hard_n": 150,
-            "benign_plain": 0.033,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.446
+            "separation": 0.433
           },
           "W2_and_W3": {
             "csic_attack": 0.207,
             "csic_attack_n": 150,
-            "benign_hard": 0.107,
+            "benign_hard": 0.133,
             "benign_hard_n": 150,
-            "benign_plain": 0.027,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
-            "separation": 0.1
+            "separation": 0.074
           },
           "T_S": {
             "csic_attack": 0.207,
             "csic_attack_n": 150,
-            "benign_hard": 0.08,
+            "benign_hard": 0.087,
             "benign_hard_n": 150,
-            "benign_plain": 0.02,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
-            "separation": 0.127
+            "separation": 0.12
           }
         },
         "detector": {
           "csic_attack": 0.96,
-          "benign_hard": 0.84,
-          "benign_plain": 0.327,
-          "separation": 0.12
+          "benign_hard": 1.0,
+          "benign_plain": 0.2,
+          "separation": -0.04
         },
         "unusable": 0,
-        "n_calls": 1350
+        "n_calls": 1350,
+        "agreement": {
+          "W1=W3": 0.887,
+          "W1=W2": 0.769,
+          "W2=W3": 0.793
+        }
       },
       "llama3.1:8b": {
         "criteria": {
           "W1": {
             "csic_attack": 0.72,
             "csic_attack_n": 150,
-            "benign_hard": 0.193,
+            "benign_hard": 0.26,
             "benign_hard_n": 150,
-            "benign_plain": 0.033,
+            "benign_plain": 0.013,
             "benign_plain_n": 150,
-            "separation": 0.527
+            "separation": 0.46
           },
           "W2": {
             "csic_attack": 0.687,
             "csic_attack_n": 150,
-            "benign_hard": 0.447,
+            "benign_hard": 0.54,
             "benign_hard_n": 150,
-            "benign_plain": 0.227,
+            "benign_plain": 0.173,
             "benign_plain_n": 150,
-            "separation": 0.24
+            "separation": 0.147
           },
           "W3": {
             "csic_attack": 0.707,
             "csic_attack_n": 150,
-            "benign_hard": 0.1,
+            "benign_hard": 0.127,
             "benign_hard_n": 150,
-            "benign_plain": 0.02,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.607
+            "separation": 0.58
           },
           "W1_and_W2": {
             "csic_attack": 0.553,
             "csic_attack_n": 150,
-            "benign_hard": 0.187,
+            "benign_hard": 0.247,
             "benign_hard_n": 150,
-            "benign_plain": 0.033,
+            "benign_plain": 0.013,
             "benign_plain_n": 150,
-            "separation": 0.366
+            "separation": 0.306
           },
           "W1_and_W3": {
             "csic_attack": 0.687,
             "csic_attack_n": 150,
-            "benign_hard": 0.093,
+            "benign_hard": 0.12,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
-            "separation": 0.594
+            "separation": 0.567
           },
           "W2_and_W3": {
             "csic_attack": 0.553,
             "csic_attack_n": 150,
-            "benign_hard": 0.1,
+            "benign_hard": 0.127,
             "benign_hard_n": 150,
-            "benign_plain": 0.02,
+            "benign_plain": 0.007,
             "benign_plain_n": 150,
-            "separation": 0.453
+            "separation": 0.426
           },
           "T_S": {
             "csic_attack": 0.533,
             "csic_attack_n": 150,
-            "benign_hard": 0.093,
+            "benign_hard": 0.12,
             "benign_hard_n": 150,
-            "benign_plain": 0.013,
+            "benign_plain": 0.0,
             "benign_plain_n": 150,
-            "separation": 0.44
+            "separation": 0.413
           }
         },
         "detector": {
           "csic_attack": 0.96,
-          "benign_hard": 0.84,
-          "benign_plain": 0.327,
-          "separation": 0.12
+          "benign_hard": 1.0,
+          "benign_plain": 0.2,
+          "separation": -0.04
         },
         "unusable": 0,
-        "n_calls": 1350
+        "n_calls": 1350,
+        "agreement": {
+          "W1=W3": 0.927,
+          "W1=W2": 0.744,
+          "W2=W3": 0.711
+        }
       },
       "mistral:7b": {
         "criteria": {
@@ -663,12 +611,17 @@
         },
         "detector": {
           "csic_attack": 0.96,
-          "benign_hard": 0.84,
-          "benign_plain": 0.327,
-          "separation": 0.12
+          "benign_hard": 1.0,
+          "benign_plain": 0.2,
+          "separation": -0.04
         },
         "unusable": 0,
-        "n_calls": 1350
+        "n_calls": 1350,
+        "agreement": {
+          "W1=W3": 0.984,
+          "W1=W2": 0.904,
+          "W2=W3": 0.92
+        }
       }
     },
     "no_novelty_sonnet": {
@@ -745,7 +698,12 @@
           "separation": -0.04
         },
         "unusable": 0,
-        "n_calls": 450
+        "n_calls": 450,
+        "agreement": {
+          "W1=W3": 0.953,
+          "W1=W2": 0.827,
+          "W2=W3": 0.847
+        }
       }
     }
   },
@@ -1089,6 +1047,128 @@
         "separator": 1.0,
         "plus_email": 1.0,
         "quoted_message": 1.0
+      }
+    }
+  },
+  "robustness": {
+    "char-distribution (Kruegel & Vigna 2003)": {
+      "probe_rate": 0.963,
+      "threshold": 4.181166601036068e-05,
+      "attack_all": {
+        "rate": 0.69,
+        "separation": -0.273,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.822,
+        "separation": -0.141,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 1.0,
+        "separation": 0.037,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.0,
+        "separation": -0.963,
+        "n": 69
+      }
+    },
+    "PAYL byte frequency (Wang & Stolfo 2004)": {
+      "probe_rate": 1.0,
+      "threshold": 42.64686457101885,
+      "attack_all": {
+        "rate": 0.587,
+        "separation": -0.413,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.748,
+        "separation": -0.252,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 0.781,
+        "separation": -0.219,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.0,
+        "separation": -1.0,
+        "n": 69
+      }
+    },
+    "one-class SVM (char n-gram)": {
+      "probe_rate": 0.667,
+      "threshold": 0.003218962998490227,
+      "attack_all": {
+        "rate": 0.697,
+        "separation": 0.03,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.585,
+        "separation": -0.081,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 0.688,
+        "separation": 0.021,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.928,
+        "separation": 0.261,
+        "n": 69
+      }
+    },
+    "isolation forest (char n-gram)": {
+      "probe_rate": 1.0,
+      "threshold": 0.35140158855373055,
+      "attack_all": {
+        "rate": 0.807,
+        "separation": -0.193,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 0.97,
+        "separation": -0.03,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 0.217,
+        "separation": -0.783,
+        "n": 69
+      }
+    },
+    "PCA reconstruction error": {
+      "probe_rate": 1.0,
+      "threshold": 0.08412210409463212,
+      "attack_all": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 300
+      },
+      "attack_value_only": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 135
+      },
+      "attack_unknown_parameter": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 96
+      },
+      "attack_unknown_path": {
+        "rate": 1.0,
+        "separation": 0.0,
+        "n": 69
       }
     }
   },

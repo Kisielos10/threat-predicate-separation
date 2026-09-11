@@ -1,0 +1,104 @@
+{
+  "qwen2.5:7b|no_score": {
+    "separation": 0.307,
+    "attack_rate": 0.307,
+    "probe_rate": 0.0,
+    "injection_separation": 0.742,
+    "n_injection": 31,
+    "agreement": {
+      "W1": 0.791,
+      "W2": 0.907,
+      "W3": 0.789
+    },
+    "condition_separation": {
+      "W1": 0.547,
+      "W2": 0.087,
+      "W3": 0.367
+    }
+  },
+  "qwen2.5:7b|with_score": {
+    "separation": 0.22,
+    "attack_rate": 0.22,
+    "probe_rate": 0.0,
+    "injection_separation": 0.742,
+    "n_injection": 31,
+    "agreement": {
+      "W1": 0.444,
+      "W2": 0.976,
+      "W3": 0.893
+    },
+    "condition_separation": {
+      "W1": 0.067,
+      "W2": 0.18,
+      "W3": 0.333
+    }
+  },
+  "llama3.1:8b|no_score": {
+    "separation": 0.287,
+    "attack_rate": 0.287,
+    "probe_rate": 0.0,
+    "injection_separation": 0.226,
+    "n_injection": 31,
+    "agreement": {
+      "W1": 0.751,
+      "W2": 0.629,
+      "W3": 0.807
+    },
+    "condition_separation": {
+      "W1": 0.46,
+      "W2": 0.147,
+      "W3": 0.58
+    }
+  },
+  "llama3.1:8b|with_score": {
+    "separation": 0.513,
+    "attack_rate": 0.56,
+    "probe_rate": 0.047,
+    "injection_separation": 0.502,
+    "n_injection": 31,
+    "agreement": {
+      "W1": 0.811,
+      "W2": 0.744,
+      "W3": 0.884
+    },
+    "condition_separation": {
+      "W1": 0.42,
+      "W2": 0.187,
+      "W3": 0.507
+    }
+  },
+  "mistral:7b|no_score": {
+    "separation": 0.213,
+    "attack_rate": 0.213,
+    "probe_rate": 0.0,
+    "injection_separation": 0.129,
+    "n_injection": 31,
+    "agreement": {
+      "W1": 0.878,
+      "W2": 0.933,
+      "W3": 0.876
+    },
+    "condition_separation": {
+      "W1": 0.54,
+      "W2": 0.4,
+      "W3": 0.587
+    }
+  },
+  "mistral:7b|with_score": {
+    "separation": 0.38,
+    "attack_rate": 0.38,
+    "probe_rate": 0.0,
+    "injection_separation": 0.258,
+    "n_injection": 31,
+    "agreement": {
+      "W1": 0.587,
+      "W2": 0.94,
+      "W3": 0.893
+    },
+    "condition_separation": {
+      "W1": 0.04,
+      "W2": 0.32,
+      "W3": 0.647
+    }
+  }
+}

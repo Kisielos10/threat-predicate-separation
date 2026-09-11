@@ -64,21 +64,35 @@ combos = {"W1": ("W1",), "W2": ("W2",), "W3": ("W3",),
           "W1_and_W2": ("W1", "W2"), "W1_and_W3": ("W1", "W3"),
           "W2_and_W3": ("W2", "W3"), "T_S": ("W1", "W2", "W3")}
 conds = {}
-for tag, path in (("with_novelty_local", "conditions/check_generated_local3.json"),
-                  ("with_novelty_sonnet", "conditions/check_generated.json"),
-                  ("no_novelty_local", "conditions/check_generated_no_novelty.json"),
+# The runs at 150 per group made before the case-ID fix merged 50 probe/ordinary pairs, which
+# then shared one evidence bundle and one detector flag. They are superseded by the re-runs below.
+# The hosted model's run with the score was one of them and cannot be repeated, so it is dropped;
+# its run without the score used 50 per group, where the old numbering never collided.
+for tag, path in (("with_novelty_local", "conditions/check_generated__qwen25_llama31_mistral.json"),
+                  ("no_novelty_local",
+                   "conditions/check_generated_no_novelty__qwen25_llama31_mistral.json"),
                   ("no_novelty_sonnet",
                    "conditions/check_generated_no_novelty__claude-sonnet-5.json")):
     d = load(path)
     if not d:
         continue
     for model, rows in d["by_model"].items():
+        keys = [(r["case_id"], r["family"]) for r in rows]
+        ids = [r["case_id"] for r in rows]
+        assert len(set(ids)) == len(ids), f"{path} [{model}]: case IDs collide; refusing to use it"
+        assert len(set(keys)) == len(keys), f"{path} [{model}]: duplicate cases"
         conds.setdefault(tag, {})[model] = {
             "criteria": {name: cond_rates(rows, cs) for name, cs in combos.items()},
             "detector": detector_rates(rows, d["detector"]),
             "unusable": sum(1 for r in rows for c in ("W1", "W2", "W3")
                             if r.get("failed", {}).get(c)),
             "n_calls": len(rows) * 3,
+            # how often two conditions receive the same answer on the same case: the evidence that
+            # a model without statistics answers the deviation question as a question of origin
+            "agreement": {f"{a}={b}": round(
+                sum(r["conditions"][a] == r["conditions"][b] for r in ok) / len(ok), 3)
+                for a, b in (("W1", "W3"), ("W1", "W2"), ("W2", "W3"))
+                for ok in [[r for r in rows if not any(r.get("failed", {}).values())]]},
         }
 res["conditions"] = conds
 

@@ -1,0 +1,682 @@
+{
+  "detector_experiment": {
+    "composition": {
+      "static": 69,
+      "tampering": 96,
+      "injection": 58,
+      "no_signature": 77
+    },
+    "detectors": {
+      "char-distribution (Kruegel & Vigna 2003)": {
+        "probe_rate": 0.963,
+        "all": {
+          "rate": 0.69,
+          "separation": -0.273,
+          "n": 300
+        },
+        "static": {
+          "rate": 0.0,
+          "separation": -0.963,
+          "n": 69
+        },
+        "tampering": {
+          "rate": 1.0,
+          "separation": 0.037,
+          "n": 96
+        },
+        "injection": {
+          "rate": 0.983,
+          "separation": 0.019,
+          "n": 58
+        },
+        "no_signature": {
+          "rate": 0.701,
+          "separation": -0.262,
+          "n": 77
+        }
+      },
+      "PAYL byte frequency (Wang & Stolfo 2004)": {
+        "probe_rate": 1.0,
+        "all": {
+          "rate": 0.587,
+          "separation": -0.413,
+          "n": 300
+        },
+        "static": {
+          "rate": 0.0,
+          "separation": -1.0,
+          "n": 69
+        },
+        "tampering": {
+          "rate": 0.781,
+          "separation": -0.219,
+          "n": 96
+        },
+        "injection": {
+          "rate": 0.983,
+          "separation": -0.017,
+          "n": 58
+        },
+        "no_signature": {
+          "rate": 0.571,
+          "separation": -0.429,
+          "n": 77
+        }
+      },
+      "one-class SVM (char n-gram)": {
+        "probe_rate": 0.667,
+        "all": {
+          "rate": 0.697,
+          "separation": 0.03,
+          "n": 300
+        },
+        "static": {
+          "rate": 0.928,
+          "separation": 0.261,
+          "n": 69
+        },
+        "tampering": {
+          "rate": 0.688,
+          "separation": 0.021,
+          "n": 96
+        },
+        "injection": {
+          "rate": 0.569,
+          "separation": -0.098,
+          "n": 58
+        },
+        "no_signature": {
+          "rate": 0.597,
+          "separation": -0.069,
+          "n": 77
+        }
+      },
+      "isolation forest (char n-gram)": {
+        "probe_rate": 1.0,
+        "all": {
+          "rate": 0.807,
+          "separation": -0.193,
+          "n": 300
+        },
+        "static": {
+          "rate": 0.217,
+          "separation": -0.783,
+          "n": 69
+        },
+        "tampering": {
+          "rate": 1.0,
+          "separation": 0.0,
+          "n": 96
+        },
+        "injection": {
+          "rate": 1.0,
+          "separation": 0.0,
+          "n": 58
+        },
+        "no_signature": {
+          "rate": 0.948,
+          "separation": -0.052,
+          "n": 77
+        }
+      },
+      "PCA reconstruction error": {
+        "probe_rate": 1.0,
+        "all": {
+          "rate": 1.0,
+          "separation": 0.0,
+          "n": 300
+        },
+        "static": {
+          "rate": 1.0,
+          "separation": 0.0,
+          "n": 69
+        },
+        "tampering": {
+          "rate": 1.0,
+          "separation": 0.0,
+          "n": 96
+        },
+        "injection": {
+          "rate": 1.0,
+          "separation": 0.0,
+          "n": 58
+        },
+        "no_signature": {
+          "rate": 1.0,
+          "separation": 0.0,
+          "n": 77
+        }
+      }
+    }
+  },
+  "condition_experiment": {
+    "composition": {
+      "static": 26,
+      "tampering": 54,
+      "injection": 31,
+      "no_signature": 39
+    },
+    "by_setting": {
+      "with_score": {
+        "qwen2.5:7b": {
+          "W1": {
+            "probe_rate": 0.833,
+            "all": {
+              "rate": 0.906,
+              "separation": 0.073,
+              "n": 149
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.167,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.167,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.967,
+              "separation": 0.133,
+              "n": 30
+            },
+            "no_signature": {
+              "rate": 0.667,
+              "separation": -0.167,
+              "n": 39
+            }
+          },
+          "W2": {
+            "probe_rate": 0.027,
+            "all": {
+              "rate": 0.207,
+              "separation": 0.18,
+              "n": 150
+            },
+            "static": {
+              "rate": 0.154,
+              "separation": 0.127,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.093,
+              "separation": 0.066,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.677,
+              "separation": 0.651,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.026,
+              "separation": -0.001,
+              "n": 39
+            }
+          },
+          "W3": {
+            "probe_rate": 0.073,
+            "all": {
+              "rate": 0.407,
+              "separation": 0.333,
+              "n": 150
+            },
+            "static": {
+              "rate": 0.885,
+              "separation": 0.811,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.315,
+              "separation": 0.241,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.613,
+              "separation": 0.54,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.051,
+              "separation": -0.022,
+              "n": 39
+            }
+          }
+        },
+        "llama3.1:8b": {
+          "W1": {
+            "probe_rate": 0.233,
+            "all": {
+              "rate": 0.653,
+              "separation": 0.42,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.767,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.767,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.161,
+              "separation": -0.072,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.333,
+              "separation": 0.1,
+              "n": 39
+            }
+          },
+          "W2": {
+            "probe_rate": 0.42,
+            "all": {
+              "rate": 0.607,
+              "separation": 0.187,
+              "n": 150
+            },
+            "static": {
+              "rate": 0.923,
+              "separation": 0.503,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.481,
+              "separation": 0.061,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.71,
+              "separation": 0.29,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.487,
+              "separation": 0.067,
+              "n": 39
+            }
+          },
+          "W3": {
+            "probe_rate": 0.147,
+            "all": {
+              "rate": 0.653,
+              "separation": 0.507,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.853,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.853,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.29,
+              "separation": 0.144,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.231,
+              "separation": 0.084,
+              "n": 39
+            }
+          }
+        },
+        "mistral:7b": {
+          "W1": {
+            "probe_rate": 0.713,
+            "all": {
+              "rate": 0.753,
+              "separation": 0.04,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.287,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.287,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.71,
+              "separation": -0.004,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.282,
+              "separation": -0.431,
+              "n": 39
+            }
+          },
+          "W2": {
+            "probe_rate": 0.013,
+            "all": {
+              "rate": 0.333,
+              "separation": 0.32,
+              "n": 150
+            },
+            "static": {
+              "rate": 0.769,
+              "separation": 0.756,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.241,
+              "separation": 0.227,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.548,
+              "separation": 0.535,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.0,
+              "separation": -0.013,
+              "n": 39
+            }
+          },
+          "W3": {
+            "probe_rate": 0.02,
+            "all": {
+              "rate": 0.667,
+              "separation": 0.647,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.98,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.98,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.645,
+              "separation": 0.625,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.0,
+              "separation": -0.02,
+              "n": 39
+            }
+          }
+        }
+      },
+      "no_score": {
+        "qwen2.5:7b": {
+          "W1": {
+            "probe_rate": 0.187,
+            "all": {
+              "rate": 0.733,
+              "separation": 0.547,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.813,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.813,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.806,
+              "separation": 0.62,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.128,
+              "separation": -0.058,
+              "n": 39
+            }
+          },
+          "W2": {
+            "probe_rate": 0.14,
+            "all": {
+              "rate": 0.227,
+              "separation": 0.087,
+              "n": 150
+            },
+            "static": {
+              "rate": 0.154,
+              "separation": 0.014,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.093,
+              "separation": -0.047,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.742,
+              "separation": 0.602,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.051,
+              "separation": -0.089,
+              "n": 39
+            }
+          },
+          "W3": {
+            "probe_rate": 0.267,
+            "all": {
+              "rate": 0.633,
+              "separation": 0.367,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.733,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.667,
+              "separation": 0.4,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.742,
+              "separation": 0.475,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.256,
+              "separation": -0.01,
+              "n": 39
+            }
+          }
+        },
+        "llama3.1:8b": {
+          "W1": {
+            "probe_rate": 0.26,
+            "all": {
+              "rate": 0.72,
+              "separation": 0.46,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.74,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.74,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.419,
+              "separation": 0.159,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.385,
+              "separation": 0.125,
+              "n": 39
+            }
+          },
+          "W2": {
+            "probe_rate": 0.54,
+            "all": {
+              "rate": 0.687,
+              "separation": 0.147,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.46,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.574,
+              "separation": 0.034,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.806,
+              "separation": 0.266,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.538,
+              "separation": -0.002,
+              "n": 39
+            }
+          },
+          "W3": {
+            "probe_rate": 0.127,
+            "all": {
+              "rate": 0.707,
+              "separation": 0.58,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 0.873,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 0.873,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.452,
+              "separation": 0.325,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.308,
+              "separation": 0.181,
+              "n": 39
+            }
+          }
+        },
+        "mistral:7b": {
+          "W1": {
+            "probe_rate": 0.0,
+            "all": {
+              "rate": 0.54,
+              "separation": 0.54,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 1.0,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 1.0,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.032,
+              "separation": 0.032,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.0,
+              "separation": 0.0,
+              "n": 39
+            }
+          },
+          "W2": {
+            "probe_rate": 0.0,
+            "all": {
+              "rate": 0.4,
+              "separation": 0.4,
+              "n": 150
+            },
+            "static": {
+              "rate": 0.962,
+              "separation": 0.962,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 0.426,
+              "separation": 0.426,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.387,
+              "separation": 0.387,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.0,
+              "separation": 0.0,
+              "n": 39
+            }
+          },
+          "W3": {
+            "probe_rate": 0.0,
+            "all": {
+              "rate": 0.587,
+              "separation": 0.587,
+              "n": 150
+            },
+            "static": {
+              "rate": 1.0,
+              "separation": 1.0,
+              "n": 26
+            },
+            "tampering": {
+              "rate": 1.0,
+              "separation": 1.0,
+              "n": 54
+            },
+            "injection": {
+              "rate": 0.258,
+              "separation": 0.258,
+              "n": 31
+            },
+            "no_signature": {
+              "rate": 0.0,
+              "separation": 0.0,
+              "n": 39
+            }
+          }
+        }
+      }
+    }
+  }
+}
