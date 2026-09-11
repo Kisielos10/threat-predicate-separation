@@ -156,8 +156,9 @@ python consolidate_results.py && python make_paper_figures.py
 ## Citing
 
 Archived on Zenodo. The concept DOI [10.5281/zenodo.22675339](https://doi.org/10.5281/zenodo.22675339)
-always resolves to the latest version; [10.5281/zenodo.22675340](https://doi.org/10.5281/zenodo.22675340)
-pins v1.0.0, the snapshot the paper's results come from. `CITATION.cff` carries the machine-readable
+always resolves to the latest version; [10.5281/zenodo.22712721](https://doi.org/10.5281/zenodo.22712721)
+pins v1.1.0, the snapshot the paper's results come from. v1.0.0 contains a case-ID collision that
+affected the condition experiment and should not be used; see `CHANGELOG.md`. `CITATION.cff` carries the machine-readable
 form.
 
 ## Licence
